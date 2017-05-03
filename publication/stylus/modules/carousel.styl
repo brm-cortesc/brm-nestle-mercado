@@ -1,0 +1,128 @@
+#carrusel-marcas
+	margin 2em auto
+	.item
+		
+		a
+			display inline-block
+			vertical-align middle
+			margin 0 1em
+			
+	.carousel-inner
+		margin 0 auto
+		width 84%
+		.active.left, .prev
+			left -33%
+			
+		.active.right, .next
+			left 33%
+	
+	.carousel-control.left, .carousel-control.right 
+		background-image none
+		
+	.glyphicon
+		color AzulBase
+		
+
+
+#carrusel-ppal
+	z-index 0
+	.carousel-inner
+		.item
+			img
+				display block
+				max-width 100%
+				height auto
+	
+
+#carrusel-recetario
+	
+	.title
+		// absolute top 1.2em left 0
+		background-color AzulBase
+		padding-right 0.9em
+		padding 0.1em 0
+		text-align center
+		transition all ease-in-out 0.3s
+		// width 40%
+		// z-index 5
+		
+		h2
+			color #fff
+			text-shadow 0px 0px 5px rgba(0, 0, 0, .3)
+			text-transform uppercase
+			
+	.views-field-title
+		font-size 1.5em
+		
+	.shareThis
+		padding 0.3em 1em
+		width 59%
+			
+
+//Modulo drupal//
+.jcarousel-skin-tango
+	.jcarousel-clip-horizontal
+		width 100%
+
+	.jcarousel-container
+		background-color transparent
+		border none
+		
+		&-horizontal
+			height auto
+			width auto
+			
+	.jcarousel-item
+		border none
+		height auto
+		max-width 100%
+		width 90px
+		
+
+	.jcarousel-next
+		background-image none
+		color AzulBase
+		font-family 'Glyphicons Halflings'
+		font-size 2.3em
+		opacity 0.5
+		text-decoration none !important
+		transition all ease-in-out 0.3s		
+		
+		&:before
+			content "\e080"
+			display block
+			
+		&:active, &:hover, &:focus
+			opacity 0.99
+			text-decoration none
+
+		&-disabled
+			color GrisOscuro
+			
+		&-horizontal
+			top 42px
+			
+	.jcarousel-prev
+		background-image none
+		color AzulBase
+		font-family 'Glyphicons Halflings'
+		font-size 2.3em
+		opacity 0.5
+		text-decoration none !important
+		transition all ease-in-out 0.3s
+		
+		&:before
+			content "\e079"
+			display block
+			
+		&:active, &:hover, &:focus
+			opacity 0.99
+			text-decoration none
+			
+		&-disabled
+			color GrisOscuro
+			
+
+		&-horizontal
+			top 42px
+	

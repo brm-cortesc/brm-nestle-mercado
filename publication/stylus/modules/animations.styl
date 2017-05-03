@@ -1,0 +1,31 @@
+.show-tooltip
+	pointer-events initial 
+	opacity 0.99 
+	transform translateY(0em)
+	
+
+//Menu Animations
+
+.menu 
+	.icon-bar
+		transition all ease-in-out 0.3s
+		
+		&:nth-child(2)
+			transform rotate(45deg)
+			
+			
+		&:nth-child(3)
+			margin-top -0.1em
+			opacity 0
+			transform rotate(-45deg)
+			
+		&:last-child
+			margin-top -0.16em
+			transform rotate(-45deg)
+		
+	.collapsed
+		.icon-bar
+			display block !important
+			margin 0.2em !important
+			opacity 0.99 !important
+			transform none !important

@@ -1,0 +1,113 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'Eventos';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.cdb
+			div.row
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-4.col-xs-12
+					//Intro
+					h1.text-title Eventos &amp; talleres
+					p.text-center Diligencia los siguientes datos para realizar tu inscripción.
+					///-Intro
+					
+					//WebForm
+					div#registro-evento
+						div.col-lg-8.col-md-8.col-sm-10.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-1
+							//Selector de taller
+							div.form-group
+								label(for="selTaller") Seleccionar taller
+								select(class="form-control", id="selTaller", name="selTaller")
+									option Opción 1
+									option Opción 2
+									option Opción 3
+									option Opción 4
+									option Opción 5
+
+							///-Selector de taller
+
+							//Nombres
+							div.form-group
+								label(for="nombres") Nombre(s): *
+								input(type="text", class="form-control", id="nombres", name="nombres")
+							///-Nombres
+
+							//Apellidos
+							div.form-group
+								label(for="apellidos") Apellidos(s): *
+								input(type="text", class="form-control", id="apellidos", name="apellidos")
+							///-Apellidos
+
+
+							//Info Documentos
+							div.form-documentos
+								//Tipo Documento
+								div.form-group.form-tipo
+									label Tipo: *
+									div.radio.radio-primary.spaceError
+										label(for="cedula-ciudadania")
+											input(type="radio", id="cedula-ciudadania", name="optionRadios", value="option1")
+											|  C.C.
+									div.radio.radio-primary.spaceError
+										label(for="cedula-extranjeria")
+											input(type="radio", id="cedula-extranjeria", name="optionRadios", value="option2")
+											|  C.E.
+								///-Tipo Documento
+
+								//Numero documento
+								div.form-group.form-num
+									label(for="documento") Documento: *
+									input(type="text", class="form-control", id="numero-documento", name="numero-documento")
+								///-Numero documento
+
+
+							///-Info Documentos
+
+							//Teléfono fijo
+							div.form-group
+								label(for="telf") Teléfono fijo
+								input(type="text", class="form-control", id="telf", name="telf")
+							///-Teléfono fijo
+
+
+							//Teléfono fijo
+							div.form-group
+								label(for="telc") Teléfono Celular
+								input(type="text", class="form-control", id="telc", name="telc")
+							///-Teléfono fijo
+					
+							
+							
+							//Participación
+							div.form-group
+								div.checkbox
+									label(for="autorizacion")
+										input(type="checkbox", id="autorizacion", name="autorizacion")
+										|  Autorizo a NESTLÉ&reg; para el tratamiento de mis datos personales	 
+									//- div.error-campo * Este campo es obligatorio
+							
+							///-Participación
+							
+							//Botón confirmación de registro
+							button(class="btn btn-warning") Enviar
+							div.ripple-wrapper
+							///-Botón confirmación de registro
+
+					///-WebForm
+						
+			///-Registro 1
+//- block Scripts
+//- 	script(src="js/libs/jquery.calendario.js")
+//- 	script(src="js/calendario.cdb.js")

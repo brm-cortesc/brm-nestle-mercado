@@ -1,0 +1,103 @@
+//Etiquetas 
+a
+	color AzulBase
+	transition all ease-in-out 0.3s
+	
+	&:active, &:hover
+		color AzulClaro
+		text-decoration underline
+		
+	&:visited
+		color darken(AzulBase, 40%)
+
+			
+body
+	background-color #fff
+	color GrisOscuro
+	font-family Roboto
+	font-size 1em/16px
+	text-rendering optimizeLegibility
+	
+//Headers
+h1, h2, h3, h4, h5, h6
+	color AzulBase
+	font-family Varela
+	
+header
+	background-color #fff
+	margin-top 0.5em
+	position relative
+	z-index 6
+
+#edit-locale, #edit-picture
+	display none
+
+.row
+	max-width 83.6em
+	margin 0 auto
+	
+	h2
+		text-transform uppercase
+		
+	
+//Ancho maximo de los rows
+
+.animated
+	opacity 0.99
+	
+	#btn-up
+		display block !important
+
+.max-width
+	max-width initial !important
+	
+	.carrusel
+		padding 0 !important
+
+//Sticky Menu
+.affix
+	top 0
+	position fixed !important
+	width 100%
+	z-index 10 !important
+	
+	.menu-logo
+		display block !important
+		
+	.logo-franja
+		margin 1em auto !important
+		opacity 0.99 !important
+		
+	
+		
+
+//Colores nutricion, salud y bienestar
+.color-bienestar
+	background-color Naranja
+
+.color-nutricion
+	background-color Verde
+	
+.color-salud
+	background-color Rojo
+
+.up
+	fixed bottom 3.3em right 0
+	opacity 0
+	overflow hidden
+	transition all ease-in-out 0.3s
+	width 11em
+	z-index 3
+	
+	#btn-up
+		cursor pointer
+		display none
+		transition all ease-in-out 0.3s
+		width 15em
+	
+.cod_youtube
+	display none
+
+.preferenciasO
+	display none
+

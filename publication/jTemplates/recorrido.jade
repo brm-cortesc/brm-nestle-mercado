@@ -1,0 +1,56 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'Recorrido';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.container-pan-cdb.cdb
+			div.row
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					//Intro
+					h1.text-title.
+						Recorre nuestra casa
+					p.text-center.
+						Conoce nuestra <strong>Casa &amp; Mercado del Bienestar NESTLÉ<sup>&reg;</sup></strong> en este sorprendente  recorrido virtual.
+					///-Intro
+
+					a.btn.btn-primary.btn-mercado.active(href="#")
+						| mercado nestlé
+						sup &reg;
+					a.btn.btn-primary.btn-casa(href="#")
+						| casa nestlé
+						sup &reg;
+
+					div.container-pan-img.container-mercado
+						p.text-center Encuentra todo el portafolio de nuestras marcas.
+						div.container-pan
+							div.panzoom
+								img(src="images/mercado-general.jpg", alt="Casa & Mercado NESTLÉ®",  title="Casa & Mercado NESTLÉ®")
+
+
+
+
+					div.container-pan-img.container-casa.hidden
+						p.text-center Espacios de la casa del bienestar
+						div.container-pan
+							div.panzoom
+								img(src="images/mercado-general.jpg", alt="Casa & Mercado NESTLÉ®",  title="Casa & Mercado NESTLÉ®")
+
+
+
+
+
+block Scripts
+	script(src="js/libs/jquery.panzoom.min.js")
+	script(src="js/recorrido.cdb.js")

@@ -1,0 +1,47 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title NESTLÉ&reg; | 404 - No se ha encontrado contenido
+
+block description
+	meta(name="description" content="404 - No se ha encontrado contenido" )
+
+block content
+	div.container-fluid.u-no-border.article-head
+
+		div.row.max-width.img-article
+
+			//Imagen destacada del articulo
+			div.col-lg-12.u-no-border
+				img.img-responsive(src="images/img-404.jpg", alt="404", title="404")
+
+			///-Imagen destacada del articulo
+
+
+
+
+	section.container-fluid.article-body.four-o-four
+		div.row
+			//Contenido artículo
+			article.col-lg-8.col-md-8.col-sm-8.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
+
+				//Texto destacado del artículo
+				h2.destacado.
+					404
+
+				///-Texto destacado del artículo
+				
+				//Texto cuerpo del artículo
+				div.contenido
+					h1.
+						Disculpa las molestias, este contenido aún no se ha 
+						terminado de preparar. Muy pronto estaremos listos.
+
+				///-Texto cuerpo del artículo
+
+				//Barra para compartir
+
+
+block Scripts

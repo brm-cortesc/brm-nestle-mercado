@@ -1,0 +1,196 @@
+.logo-cdb
+	margin 1em auto
+
+
+.pagina-resultados
+
+	li
+		display list-item !important
+		margin-bottom 1.3em
+		border-bottom GrisClaro 0.1em solid !important
+		
+
+		&:hover
+			background-color lighten(GrisClaro, 40%)
+
+		a
+			display block
+			font-size 1.3em
+			text-transform capitalize
+		
+
+		span
+			font-size 0.9em
+			
+			
+
+//Paginador de articulos
+li.pager-item
+	display inline-block
+	margin 2em auto			
+				
+	
+.seccion-nestle
+	min-height 18em
+	h1
+		color #fff
+		margin 1em auto
+		position relative
+		text-align center
+		text-transform uppercase
+		z-index 1
+		
+	.btn
+		//Color Icono
+		&.btn-bienestar
+			background-color Naranja
+
+			&:hover
+				background-color lighten(Naranja, 5%)
+				
+		&.btn-nutricion
+			background-color Verde
+
+			&:hover
+				background-color lighten(Verde, 5%)
+				
+		&.btn-salud
+			background-color Rojo
+
+			&:hover
+				background-color lighten(Rojo, 5%)
+			
+		&.btn-fab
+			color #fff
+			cursor default
+			display block
+			font-size 6em
+			height 2em
+			margin 1em auto 0.3em
+			padding 0.5em 0 0
+			position relative
+			transition all ease-in-out 0.2s
+			width @height
+			z-index 1
+			
+			&:before
+				border 0.1em solid
+				border-radius 100%
+				height 2em
+				padding 0.3em
+				width 2em
+				
+	//Colores para header y foto de cada seccion
+	.color
+		&-bienestar
+			background-color saturate(Naranja, 30%)
+			position relative
+			overflow hidden
+			
+			.img-seccion
+				path("header-bienestar.png")
+			
+		
+		&-nutricion
+			background-color saturate(Verde, 30%)
+			position relative
+			overflow hidden
+			
+			.img-seccion
+				path("header-nutricion.png")
+				
+
+		&-salud
+			background-color saturate(Rojo, 30%)
+			position relative
+			overflow hidden
+			
+			.img-seccion
+				path("header-salud.png")
+				background-position 80% 50%		
+
+		
+	.img-seccion
+		absolute top 0 left 0
+		path("sample-img-section.jpg")
+		background-attachment fixed
+		background-position center top
+		background-repeat no-repeat
+		background-size 180%
+		height 30em
+		opacity 0.3
+		transition all ease-in-out 0.3s
+		width 100%
+		z-index 0
+	
+
+.nestip
+	&-texto
+		background-color GrisClaro
+		
+		.contenedor-nestip
+			font-style italic
+			margin 0.5em auto
+			max-height 3.8em
+			padding 0.3em 0 
+
+	&-titulo
+		background-color AzulBase
+			
+		h3
+			color #fff
+			font-size 2.3em
+			margin 0.5em auto
+			text-align center
+			text-transform uppercase
+
+.receta-random
+	padding 0
+	position relative
+	overflow hidden
+	
+	.logo-recetario
+		absolute bottom -0.5em left 0.5em
+		background-color #fff
+		border-radius 0.3em
+		padding 0.6em
+		text-align center
+		z-index 2
+		width 14em
+		
+		h1
+			margin 0.25em auto
+			.img-responsive
+				display inline-block
+				width 4em
+
+	.nombre-receta
+		absolute bottom -0.5em right 0.5em
+		background-color rgba(0,0,0,0.5)
+		border-radius 0.3em
+		width 17em
+		padding 0.5em 0.6em
+		z-index 2
+		
+		h3
+			color #fff
+			font-size 0.9em
+			text-align center
+			
+			a
+				color #fff
+	
+	.receta
+		relative top 0 left 0
+		z-index 0
+		
+/*Btn de chat*/
+img[id^="liveagent_button_"]
+	bottom 0 
+	display block 
+	height  auto 
+	left 0 
+	max-width 23rem 
+	position fixed 
+	z-index 3 
+		

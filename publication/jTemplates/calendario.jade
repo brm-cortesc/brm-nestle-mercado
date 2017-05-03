@@ -1,0 +1,139 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'Eventos';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.container-eventos.cdb
+			div.row
+
+				//Sidebar detalle evento
+				
+				div.detalle-evento
+					a.btn.btn-primary.btn-cerrar(href='#'): i.fa.fa-times
+					h2
+						i.btn.btn-fab.btn-raised.icon.icon-nutricion
+						span Nutrición
+					div.container-evento
+						img(href="#" src="images/evento-1.png" alt="evento 1" title="evento 1")
+						
+						div.evento-info
+							h3 Taller:
+							div.evento-nombre
+								p ¡Qué en tu mesa no falte el Brócoli!
+							h3 Hora:
+							div.evento-hora
+								p 8:00 A.M. - 4:00 P.M.
+							h3 Conferencista:
+							div.evento-conferencista
+								p María Camila García - Chef
+							h3 Descripción:
+							div.evento-descripcion
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus facilisis libero a feugiat. Ut sed gravida odio. In pulvinar auctor erat. Ut et fermentum arcu. Vestibulum ipsum laoreet id.
+					
+					
+					a.btn.btn-primary.btn-share(href='#')
+						| Compartir
+						i.fa.fa-share-alt
+					a.btn.btn-primary.btn-asistir(href='#')
+						| Quiero asistir
+						i.fa.fa-angle-double-right
+				///-Sidebar detalle evento
+
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					h1.text-title.
+						Eventos &amp; talleres
+					p.
+						Agéndate con la programación de nuestras actividades y conoce todo lo que el mundo <strong>NESTLÉ<sup>&reg;</sup></strong> tiene para ti.
+					div.year
+						label(for="year") 	
+						select(type="select" name="year" id="year")
+							option(value="2018") 2018
+							option(value="2017") 2017
+							option(value="2016") 2016
+							option(value="2015") 2015
+
+					div.month
+						label(for="mes")
+						select(type="select" name="mes" id="mes")
+							option(value="1") Enero
+							option(value="2") Febrero
+							option(value="3") Marzo
+							option(value="4") Abril
+							option(value="5") Mayo
+							option(value="6") Junio
+							option(value="7") Julio
+							option(value="8") Agosto
+							option(value="9") Septiembre
+							option(value="10") Octubre
+							option(value="11") Noviembre
+							option(value="12") Diciembre
+
+					div.select-month
+						a.btn.btn-primary.btn-prev(href='#')							
+							i.fa.fa-chevron-left
+
+						a.btn.btn-primary.btn-next(href='#')
+							
+							i.fa.fa-chevron-right
+					
+					div.container-calendario
+						div#calendario-cdb
+
+					div.legales
+						p.
+							Nuestras actividades están sujetas a cambios sin previo aviso, por lo anterior es importante que realices la inscripción previa y antes de cada actividad confirmes tu asistencia. Conoce <a href="reglamento-cdb.html">aquí</a> el reglamento de nuestra <strong>Casa &amp; Mercado del Bienestar NESTLÉ <sup>&reg;</sup></strong>
+					
+					div.col-lg-4.col-md-4.col-sm-12.col-xs-12.banner-evento
+						//- h2 Revive tu streamimg
+						img(href="#" src="images/prox-evento-2.jpg" alt="Próximo evento" title="Próximo evento")
+
+					div.col-lg-8.col-md-8.col-sm-12.col-xs-12.contenedor-evento
+						h2.text-title Próximo evento
+						div.col-lg-6.col-md-6.col-sm-12.col-xs-12.col-prox-e
+							div.prox-evento
+								div.fecha-evento
+									h3
+										span.dia 31
+										span.mes Dic
+								img(href="#" src="images/prox-evento-1.jpg" alt="Próximo evento" title="Próximo evento")
+
+						div.col-lg-6.col-md-6.col-sm-12.col-xs-12.col-prox-e.informacion-evento
+							h3 Taller:
+							p ¡Qué en tu mesa no falte el Brócoli!
+							h3 Hora:
+							p 8:00 A.M. - 4:00 P.M.
+							h3 Conferencista:
+							p María Camila García - Chef
+							h3 Descripción:
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus facilisis libero...
+							a.btn.btn-primary(href='eventos-inscripcion.html')
+								| Regístrate aquí
+								i.fa.fa-angle-double-right
+
+block Scripts
+	script(src="js/libs/jquery.calendario.js")
+	script(src="js/calendario.cdb.js")
+
+
+
+
+
+
+
+
+
+
+				
+				

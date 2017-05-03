@@ -1,0 +1,213 @@
+#search-input, #search-input-mobile
+	.form-group
+		border-radius 0.5em
+		border 2px solid darken(AzulBase, 40%)
+		padding 0.2em 0.5em 
+		
+		input
+			background-image none
+			display inline-block
+			text-align left
+			width 90%
+
+		.glyphicon-search
+			color darken(AzulBase, 40%)
+			display inline-block
+			font-size 1.3em
+			width 10%
+			
+						
+#search-input-mobile
+	.form-group
+		border-color #fff
+		
+		.glyphicon-search
+			color #fff
+			
+
+
+#search-api-page-search-form-buscador-casa-del-bienestar, #search-api-page-search-form
+	border-radius 0.5em
+	border 2px solid darken(AzulBase, 40%)
+	padding 0.2em 0.5em
+	
+	p
+		display none
+	
+	.form-submit
+		path("search-icon.png")
+		background-repeat no-repeat
+		background-color #fff
+		background-size 100%
+		border 0
+		display inline-block
+		height 1.5em
+		text-indent -9999em
+		vertical-align middle
+		width @height
+		
+		
+	.form-item
+		border 0
+		display inline-block
+		padding 0.5em 0.1em 
+		// text-align center
+		vertical-align middle
+		width 85%
+		
+		// &:before
+		// 	color darken(AzulBase, 40%)
+		// 	content "\e003"
+		// 	cursor pointer
+		// 	display inline-block
+		// 	float right
+		// 	font-family 'Glyphicons Halflings'
+		// 	font-size 1.3em
+		// 	height 1.3em
+		// 	width @height
+			
+		.form-text
+			border 0
+			width 90%
+
+#search-api-page-search-form
+	margin-top 3em
+
+article
+	#search-api-page-search-form-buscador-casa-del-bienestar, #search-api-page-search-form
+		.form-item
+			width 96%	
+
+#menu
+	animation-duration 0.2s
+	width 100%
+	
+
+
+.helpers-registro
+	text-align center
+	
+.menu
+	background-color AzulBase
+	transition all ease-in-out 0.3s
+	animation-delay 0.1s
+	position relative 
+	z-index 6
+	width 100%
+	
+	&-recetario
+		background-color VerdeOscuro
+		
+		nav.navbar.navbar-default
+			background-color VerdeOscuro
+			
+		.navbar .social-link a
+		
+			span
+				color VerdeOscuro
+			
+			&:active, &:hover, &:focus
+				background-color lighten(VerdeOscuro, 10%)
+				
+	&.affix
+		.nav>li>a
+			padding 20px 10px
+
+
+.login
+	box-shadow inset  0px -5px 12px 0px rgba(0, 0, 0, .25)
+	display none	
+	#login, #user-login-form			
+		.check
+			border 2px solid
+			color darken(AzulBase, 40%)
+			
+		.form-control, .form-text
+			background-image none !important
+			border 2px solid 
+			border-radius 10px
+			color darken(AzulBase, 40%)
+			padding 0.5em
+			width 100%
+			
+			&:focus
+				background-color white
+				background-image none !important
+				border 2px solid
+				border-radius 10px
+				color darken(AzulBase, 40%)
+		
+		.form-submit
+			padding 8px 10px
+			width 100%		
+
+
+	.cerrar-login
+		border-radius 0.5em 0.5em 0 0
+		display block
+		margin 0 auto
+
+nav.navbar.navbar-default
+	background-color AzulBase
+	
+
+.navbar
+	margin-bottom 0
+	min-height initial
+	
+	li
+		&:hover
+			background-color #497fc4 
+			transition all ease-in-out 0.3s
+	
+
+	&-toggle
+		// display inline-block
+		vertical-align middle
+		float none !important
+		width 26%
+		
+	.logo-franja
+		display none
+		margin 0em auto
+		opacity 0
+		vertical-align middle
+		width 68% 
+	
+	
+	.social-link
+		background-color #fff
+		border-radius 50%
+		height 2.8em
+		margin-left 0.5em
+		margin-top @margin-left
+		transition all ease-in-out 0.2s
+		width 2.8em
+		// margin 0 auto
+		
+		a
+			border-radius 50%
+			color AzulBase
+			display block
+			font-size 1.8em
+			margin 0 auto
+			padding 0.4em !important
+			
+			span
+				color AzulBase
+				
+		&:active, &:hover, &:focus
+			background-color AzulClaro
+
+.menu-logo
+	background-color transparent !important
+	display none !important
+	transition all ease-in-out 0.3s
+	width 13em
+	padding 0.9em 0 !important
+	
+	img
+		margin-bottom -0.2em
+		margin-left 1.1em
+		margin-top -0.7em
+		width 23em

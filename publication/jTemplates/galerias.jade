@@ -1,0 +1,104 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'Galerias';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.container-galeria-cdb.cdb
+			div.row
+			
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					//Intro
+					h1.text-title.
+						Galerías
+					p.text-center.
+						Te compartimos los mejores momentos de nuestra <strong>Casa y Mercado del Bienestar NESTLÉ<sup>&reg;</sup></strong>
+					///-Intro
+
+					a.btn.btn-primary.btn-local.active(href="#local-stream")
+						| actividades nestlé
+						sup &reg;
+					a.btn.btn-primary.btn-out(href="#out-stream")
+						| experiencia nestlé
+						sup &reg;
+					
+					//Galerias propias
+					div#local-stream.row.galeria-list
+						p.text-center Capturamos todo el bienestar de nuestros talleres para ti. 
+
+						-for(x = 1; x <= 2; x++)
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-plus-circle(href="galeria-evento.html")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé de texto medio
+
+							
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-plus-circle(href="galeria-evento.html")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé de texto que puede ser más largo
+							
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-plus-circle(href="galeria-evento.html")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé
+
+							//- div.clearfix
+
+					///-Galerias propias
+					//Galerias Instagram
+					div#out-stream.row.galeria-single.hidden
+						p.text-center
+							| Capturamos todo el bienestar 
+							strong  #SoyNestlé
+
+						-for(z = 1; z < 12 ;z ++)
+
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4
+								div.galeria-item
+									a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg")
+									img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+
+							-if(z % 3 === 0)
+								div.clearfix
+					
+					///-Galerias Instagram
+
+
+					//Galeria single
+					div#una-galeria.row.galeria-single.hidden
+						h3.text-center Titulo de la galería
+
+						-for(z = 1; z < 12 ;z ++)
+
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4
+								div.galeria-item
+									a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg")
+									img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+
+							-if(z % 3 === 0)
+								div.clearfix
+								
+
+
+
+					///-Galeria single
+
+
+block Scripts
+	script(src="js/libs/jquery.magnific-popup.min.js")
+	script(src="js/galerias.cdb.js")

@@ -1,0 +1,313 @@
+.loader
+	margin 1em auto
+	max-width 60%
+	.img-responsive, p 
+		display inline-block
+		vertical-align middle
+		
+	p
+		color AzulBase
+		margin-left 0.5em
+		font-size 3em
+		
+	.img-responsive
+		animation loading 0.5s ease-in-out alternate infinite
+		// transition all ease-in-out 0.3s
+
+/*Favoritos*/
+li.flag-favoritos
+	list-style none
+	
+	.flag
+	
+		&:before
+			content "\e143"
+			display inline-block
+			font-family 'Glyphicons Halflings'
+			margin-right 0.5em
+			transition all ease-in-out 0.3s
+			vertical-align middle
+			
+		&:hover
+			&:before
+				content "\e005"
+				
+
+	.flagged
+		&:before
+			content "\e005" !important
+		
+
+/*Ranking*/
+div.fivestar-widget-static, .fivestar-widget
+	.star
+		background none !important
+		color transparent
+		cursor pointer
+		display inline-block
+		font-family "FontAwesome"
+		text-indent 0 !important
+		vertical-align middle
+		position relative
+		transition all ease-in-out 0.3s 
+		
+		&:before
+			content "\f006"
+			color GrisOscuro
+			display block
+			
+
+		a
+			absolute top 0
+			background none !important
+			font-family "FontAwesome"
+			opacity 0
+			text-indent 0
+			
+			&:before
+				content "\f005"
+				color Amarillo
+				display block
+			
+			&:hover
+				opacity 1			
+
+		.on
+			position absolute
+			top 0
+			&:before
+				content "\f005"
+				color Amarillo
+				display block
+				
+	.hover
+		&:before
+			content "\f005"
+			color Amarillo
+			display block
+				
+
+.widget
+	margin-top 2em
+	position relative
+	
+	.icon-widget
+		cursor default
+		height 48px
+		relative top 0 left 44%
+		margin-bottom -0.5em
+		width @height
+		z-index 2
+		
+		.fa
+			background-color #fff
+			border-radius 100%
+			bottom 0
+			display inline-block
+			left 0
+			padding 0.4em
+			position absolute
+			right 0
+			text-align center
+			top 0
+			vertical-align middle
+				
+	.fa.fa-facebook
+		color #0069cd
+
+	.fa.fa-twitter
+		color #41ddff
+
+	.fa.fa-youtube
+		color #ff0a53
+
+.widget-fb
+	.icon-widget
+		background-color #0069cd !important
+		border 3px solid #0069cd
+	
+	.fb-xfbml-parse-ignore
+		blockquote
+			visibility hidden
+		
+.widget-tw	
+	max-height 24.8rem !important
+	overflow hidden
+	
+	hr
+		border-top-color lighten(#00cae2, 40%)
+		margin 0.2em
+	
+
+	.row
+		background-color #00cae2
+		color #fff
+		padding 1em .5em 1.6em
+
+	.icon-widget
+		background-color #41ddff !important
+		border 3px solid #41ddff
+		
+	.desc, .img-circle
+		display inline-block
+		vertical-align middle
+	
+	.desc
+		width 55%
+		
+	.img-circle
+		max-width 4em
+		width 40%
+		
+	.tweet
+		font-size 0.9em
+		
+	.tweet-stats, .tweet-actions
+		text-align center
+		
+.widget-yt
+	.icon-widget
+		background-color #ff0a53 !important
+		border 3px solid #ff0a53
+		
+	.row
+		background-color #959595
+		max-height 15em
+		overflow hidden
+		padding 3em 0.5em 4.6em
+		
+		.embed-responsive
+			padding-bottom 42%
+		
+		
+
+//Facebook overwrite
+img._1drn.img, ._3-8_, ._3-8_.lfloat, .lfloat
+	border-radius 100% !important
+
+
+//Twitter overwrite
+	
+//YouTube overwrite
+#___ytsubscribe_0
+	display block !important
+	margin-bottom 11em !important
+	
+span.video-thumb.yt-thumb.yt-thumb-48
+	border-radius 100% !important
+	
+a.yt-username
+	color #fff !important
+	
+
+/*Slider Video Drupal*/
+#bxslider_views_slideshow_main_view_bannerhome-block
+	.bx-wrapper .bx-viewport
+		box-shadow none
+		border 0
+		left 0
+		
+	.bx-wrapper .bx-pager.bx-default-pager a
+		background-color AzulBase
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active
+		background-color #fff
+		border 1px solid AzulBase
+		
+
+
+#bxslider_views_slideshow_main_recetario_videos-block
+	margin-top 2em
+	margin-bottom 1em
+	max-width 95%
+	.bx-wrapper .bx-viewport
+		box-shadow none
+		
+
+	.bxslider-views-slideshow-main-frame-row
+		float none !important
+		display inline-block
+		vertical-align top
+		width 15em !important
+		
+		&:hover
+			.views-field-title
+				color AzulBase
+		
+
+	.views-field-title
+		font-family Varela
+		text-align center
+		transition all ease-in-out 0.3s
+		
+
+	.bx-viewport
+		padding 0 3em
+			
+	.bx-wrapper
+		.bx-next, .bx-prev
+			background none
+			color AzulBase
+			font-family 'Glyphicons Halflings'
+			font-size 1.5em
+			
+			&:hover
+				text-decoration none
+			
+
+		.bx-next
+			right -1.8em
+			
+			&:before
+				content "\e080"
+				display block
+				
+		.bx-prev
+			&:before
+				content "\e079"
+				display block
+				
+	.bx-controls-direction a
+		text-indent 0
+		
+	
+
+#views-slideshow-bxslider-1
+	.bx-wrapper
+		.bx-viewport
+			box-shadow none
+			border 0
+			// margin-left 0.4em
+			
+	.bx-wrapper .bx-pager.bx-default-pager a
+		background-color AzulBase
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active
+		background-color #fff
+		border 1px solid AzulBase
+
+	.views-slideshow-bxslider
+		li
+			img
+				height auto !important
+				max-width 100%
+				
+#bxslider_views_slideshow_main_recetas_home_block-default
+	li img
+		height auto !important
+		max-width 100%
+		
+	.bx-wrapper .bx-pager.bx-default-pager a
+		background-color AzulBase
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active
+		background-color #fff
+		border 1px solid AzulBase
+		
+
+	.bx-wrapper
+		.bx-viewport
+			box-shadow none
+			border 0
+			margin-left 0.4em
+		

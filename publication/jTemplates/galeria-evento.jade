@@ -1,0 +1,45 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'Galerias';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.container-galeria-cdb.cdb
+			div.row
+			
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					//Intro
+					h1.text-title.
+						Galería Evento
+					p.text-center.
+						Te compartimos los mejores momentos de nuestra <strong>Casa y Mercado del Bienestar NESTLÉ<sup>&reg;</sup></strong>
+					///-Intro
+
+					///-Galerias propias
+					//Galerias Instagram
+					div.row.galeria-single
+						-for(z = 1; z < 12 ;z ++)
+
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4
+								div.galeria-item
+									a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg")
+									img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+
+						
+					///-Galerias Instagram
+
+
+block Scripts
+	script(src="js/libs/jquery.magnific-popup.min.js")
+	script(src="js/galeria-single.cdb.js")

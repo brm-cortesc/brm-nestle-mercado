@@ -1,0 +1,37 @@
+//Footer
+footer
+	div.container-fluid
+		div.row
+			div.col-lg-12
+				ul.footer-list
+					li: a(href="#") Políticas de privacidad
+					li: a(href="#") Ver información corporativa
+					li: a(href="#") Política de tratamiento de datos personales
+
+				p NESTLÉ&reg; Colombia 2015 - Todos los derechos reservados
+				
+				//- img.img-responsive.peel(src="images/logo-nestle-peel.png", alt="NESTLÉ")
+
+
+///-Footer
+
+//Scripts
+if debug == true
+	script(src='js/libs/jquery.js')
+	script(src='js/libs/bootstrap.min.js')
+	script(src='js/libs/jquery.validate.js')
+	script(src='js/libs/ripples.min.js')
+	script(src='js/libs/material.min.js')
+	script(src='js/casa-del-bienestar.js')
+
+else
+	script(src='js/libs/jquery.js')
+	script(src="js/libs.casa-del-bienestar.min.js")
+	script(src='js/casa-del-bienestar.js')
+	script(src='js/validarForm.js')
+		
+script.
+	$(document).ready(function() {
+		// This command is used to initialize some elements and make them work properly
+		jQuery.material.init();
+	});

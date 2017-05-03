@@ -1,0 +1,465 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title NESTLÉ&reg; | Salud
+
+block description
+	meta(name="description" content="Salud" )
+
+block content
+	//Imagen y nombre de Sección
+	section
+		div.container-fluid.u-no-border.seccion-nestle
+			div.row.max-width
+				div.col-lg-12.color-salud
+					div.btn.btn-salud.btn-fab.btn-raised.icon.icon-salud
+
+					h1.seccion-nombre Salud
+					div.img-seccion
+					//- img.img-responsive(src="images/sample-img-section.jpg", alt="Nombre Sección")
+
+	///-Imagen y nombre de Sección
+	section
+		div.container-fluid
+			div.row
+				div.col-lg-3.col-md-3.col-sm-3.col-xs-12.nestip-titulo
+					h3 Nestips
+				div.col-lg-9.col-md-9.col-sm-9.col-xs-12.nestip-texto
+					p#contenedor-nestip.
+						Al practicar ejercicios es importante que tengas una alimentación rica en vitaminas antioxidantes que mejoren
+						tu metabolismo. Al practicar ejercicios es importante que tengas una alimentación rica en vitaminas antioxidantes que mejoren
+						tu metabolismo.
+
+	section
+		//Articulos de la sección
+		div.container-fluid
+			//Principales / Recientes
+			div.row
+
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-salud
+
+					div.title
+						h2 Destacado 1
+						
+					figure.img-wrapper
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos.					
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						//Box flotante botones de compartir
+						div.buttons-share
+							img.img-responsive(src="images/shares.jpg")
+
+
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-salud
+
+					div.title
+						h2 Destacado 2
+						
+					figure.img-wrapper
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos. 
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a#readmore.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-salud
+
+					div.title
+						h2 Destacado 3
+						
+					figure.img-wrapper
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos.
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+			///-Principales / Recientes
+
+			//Articulos antiguos
+			div.row
+
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-salud
+
+										
+					figure.img-wrapper
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 titulo
+
+					
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos.					
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						//Box flotante botones de compartir
+						div.buttons-share
+							img.img-responsive(src="images/shares.jpg")
+
+
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-salud
+
+											
+					figure.img-wrapper
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 titulo
+					
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos. 
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a#readmore.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-salud
+
+									
+					figure.img-wrapper
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 titulo
+					
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos.
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+			button.btn.btn-cargar-mas.
+				<i class="glyphicon glyphicon-repeat"></i> Cargar Más
+
+			///-Articulos antiguos
+
+		///-Articulos de la sección
+
+		section
+			//Recetario
+			div.container-fluid
+				div.row
+
+					//Slider de recetas
+					article.col-lg-8.col-md-8.col-sm-8.col-xs-12
+
+						div#carrusel-recetario.carousel.slide(data-ride="carousel")
+
+							div.title
+								h2.
+									Mi Recetario Nestlé<sup>&reg;</sup>
+
+							//bullets
+							ol.carousel-indicators
+								li.active(data-target="#carrusel-recetario", data-slide-to="0" )
+								li(data-target="#carrusel-recetario", data-slide-to="1" )
+								li(data-target="#carrusel-recetario", data-slide-to="2" )
+
+							//wrapper 
+							div.carousel-inner(role="listbox")
+
+								//item
+								div.item.active
+									img(src="images/sample-recetario-1.jpg", alt="Ejemplo de ALT")
+
+									//- div.carousel-caption
+									//- 	a(href="#", role="button") Ver Más
+
+								//item
+								div.item
+									img(src="images/sample-recetario-2.jpg", alt="Ejemplo de ALT")
+
+									//- div.carousel-caption
+									//- 	a(href="#", role="button") Ver Más
+
+								//item
+								div.item
+									img(src="images/sample-recetario-1.jpg", alt="Ejemplo de ALT")
+
+									//- div.carousel-caption
+									//- 	a(href="#", role="button") Ver Más
+						//Wrapper para compartir, enviar, favorito y ver más
+						div.wrapper-vermas
+							div.row
+								div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+								div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+									button.btn.btn-default.share.share-mail
+										span.fa.fa-paper-plane
+										
+									button.btn.btn-default.share.share-favorito
+											span.glyphicon.glyphicon-heart-empty
+
+									button.btn.btn-default.share.share-others
+										span.fa.fa-share-alt				
+
+								div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+									a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+					///-Slider de recetas
+					//Lonchera
+					article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-lonchera
+
+						div.title
+							h2 Loncheras
+							
+						figure.img-wrapper
+							
+							img.img-article.img-responsive(src="images/sample-loncheras.jpg", alt="", title="Ejemplo de Title")
+
+						h3 Titulo
+
+						p.
+							<a href="#">La lonchera perfecta</a> está hecha con amor, cuidado y nutrición. 
+							Por eso en NESTLÉ® tenemos la mayor y más rica variedad para que pongas en cada lochera lo mejor para ti y para tu famila. Llénate y llénalos de energía con los mejores productos.
+
+						//Wrapper para compartir, enviar, favorito y ver más
+						div.wrapper-vermas
+							div.row
+								div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+								div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+									button.btn.btn-default.share.share-mail
+										span.fa.fa-paper-plane
+										
+									button.btn.btn-default.share.share-favorito
+											span.glyphicon.glyphicon-heart-empty
+
+									button.btn.btn-default.share.share-others
+										span.fa.fa-share-alt				
+
+								div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+									a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+					///-Lonchera
+
+
+			///-Recetario
+	section
+		//Seccion te puede interesar
+		div.container-fluid
+			div.row
+				div.col-lg-12
+					h2 Te puede interesar
+
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-talleres
+
+					div.title
+						h2 NESTLÉ&reg; TV
+						
+					figure.img-wrapper
+
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="")
+
+					h3 Titulo
+
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos. 
+					
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-nutricion
+
+					div.title
+						h2 nutrición
+						
+					figure.img-wrapper
+						img.sticker.sticker-nutricion.img-responsive(src="images/sticker-nutricion.png", width="140" alt="nutrición")
+
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="")
+
+					h3 Titulo
+
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos. 
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-bienestar
+
+					div.title
+						h2 Bienestar
+						
+					figure.img-wrapper
+						img.sticker.sticker-bienestar.img-responsive(src="images/sticker-bienestar.png", width="140", alt="Bienestar")
+						img.img-article.img-responsive(src="images/sample-article-section.jpg", alt="")
+
+					h3 Titulo
+
+					p.
+						Cuidarte no solo es necesario también puede ser divertido y más aún si lo haces en casa.
+						Busca espacios apropiados y cómodos.
+
+					//Wrapper para compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-2.hidden-sm.hidden-xs							
+
+							div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+
+
+
+		///-Seccion te puede interesar
+
+
+
+
+block Scripts

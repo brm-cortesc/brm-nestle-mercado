@@ -1,0 +1,248 @@
+/*Formulario de Drupal*/
+
+#views-exposed-form-recetario-page
+	
+	.ctools-auto-submit-processed
+		path("search-icon.png")
+		background-repeat no-repeat
+		background-position 99% center
+
+	//input de búsqueda
+	#edit
+				
+		/*Boton de drupal*/	
+		&-submit-recetario
+			display none
+			
+		&-reset
+			padding 8px 10px !important
+			
+		&-title
+			border 2px solid AzulBase
+			border-radius 0.3em
+			width 100% !important
+			max-width 60em
+			padding 0.5em 
+			background-color transparent
+			margin 1em auto
+			
+			
+			&::-webkit-input-placeholder
+				color GrisOscuro !important
+			&::-moz-placeholder
+				color GrisOscuro !important 
+			&:-ms-input-placeholder
+				color GrisOscuro !important 
+			&:-moz-placeholder
+				color GrisOscuro !important
+				
+
+			&-wrapper
+				.views-widget
+					display block
+		
+
+	.views
+		&-widget-filter-title
+			float none
+			margin 0 auto
+			max-width 60em
+	
+		&-exposed-widget
+			background-color AzulBase
+			cursor pointer
+			float none
+			display inline-block
+			margin-bottom 1.5em
+			padding 0.9em
+			position relative
+			width (96%/5)
+			
+			&:after
+				content "\e8b4"
+				color #fff
+				cursor pointer
+				// display inline-block
+				margin-top 1.6rem
+				font-family 'Material-Design-Icons'
+				position absolute
+				top 50%
+				right 1rem
+				transform translate3d(0,-50%,0)
+				// vertical-align middle
+			
+
+			// &:first-child
+			// 	background-color transparent
+			// 	display block
+			// 	padding 0.5em
+			// 	width 100%
+				
+			// 	&:after
+			// 		content ""
+
+			label
+				display none
+				
+
+			select
+				appearance none
+				background-color transparent
+				background-image none
+				border 0
+				color #fff
+				cursor pointer
+				display inline-block
+				font-size 0.9em
+				pointer-events none
+				
+				option
+					color GrisOscuro !important
+					
+
+			.views-exposed-widget
+				width 18.2%
+				
+				.form-submit
+					margin-top 0
+					width 100%
+				
+				
+		&-submit-button, &-reset-button
+			background-color transparent
+			margin 0
+			
+			&:after
+				content ""
+			
+		&-submit-button
+			display none
+			
+		&-reset-button
+			margin 0
+			
+		&-widget
+			display inline-block
+			margin-left 0.5em
+			vertical-align middle
+			
+	/*Iconos de cada filtro*/
+	.views-widget-filter
+		
+		/*Momentos*/
+		&-field_momentos_tid
+			width 17%
+			&:before
+				color #fff
+				content "\e6ce"
+				display inline-block
+				font-family 'Material-Design-Icons'
+				font-size 2.8em
+				vertical-align middle
+		
+		/*Tipo de comida*/		
+		&-field_tipo_tid
+			&:before
+				color #fff
+				content "\f0f5"
+				display inline-block
+				font-family 'FontAwesome'
+				font-size 2.8em
+				vertical-align middle
+				
+
+		/*tiempo*/
+		&-field_tiempo_rango__tid
+			width 23%
+			&:before
+				color #fff
+				content "\e720"
+				display inline-block
+				font-family 'Material-Design-Icons'
+				font-size 2.8em
+				vertical-align middle
+				
+		/*Marca*/
+		&-field_marcas_tid
+			&:before
+				color #fff
+				content "\f02b"
+				display inline-block
+				font-family 'FontAwesome'
+				font-size 2.8em
+				vertical-align middle
+			
+
+
+.buscar-receta
+	border 2px solid AzulBase
+	border-radius 0.3em
+	max-width 60em
+	background-color transparent
+	margin 1em auto
+	
+	&::-webkit-input-placeholder
+		color GrisOscuro !important
+	&::-moz-placeholder
+		color GrisOscuro !important 
+	&:-ms-input-placeholder
+		color GrisOscuro !important 
+	&:-moz-placeholder
+		color GrisOscuro !important			
+	
+.selects
+	background-color AzulBase
+	cursor pointer
+	max-height 5em
+	margin-bottom 1.5em
+	padding 0.5em 0
+	
+	.col
+		&-lg-3
+			border-right 1px solid #fff
+			
+			&:last-child
+				border-right none
+				// border-left 1px solid #fff
+	
+	.form-group
+		background-image none
+		color #fff
+		cursor pointer
+		display inline-block
+		margin-left 0.1em
+		width 75%
+		
+		&:hover,&:focus
+			background-image none
+			
+			
+		.form-control
+			background-image none
+			color #fff
+			cursor pointer
+			
+			option
+				color GrisOscuro !important
+
+	.ico
+		color #fff
+		display inline-block
+		font-size 3em
+		vertical-align middle
+		// width 15%
+			
+	.fa
+		font-size 2.5em
+		margin-top 0.2em
+		
+
+/*Ocultando resultados*/
+.view-filters.row
+	margin-top 1rem
+
+.view
+	&-id-recetario
+		.view-content
+			display none
+		

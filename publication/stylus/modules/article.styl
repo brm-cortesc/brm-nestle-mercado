@@ -1,0 +1,621 @@
+#listado-ingredientes
+	
+	span, .form-group
+		display inline-block
+		vertical-align middle
+	
+	span
+		color GrisOscuro
+		font-family Varela
+		font-size 1.5em
+		text-transform uppercase
+		
+	.form-group
+		width 4.5em
+		
+		.form-control
+			background-image none
+			color AzulBase
+			font-family Varela
+			font-size 1.5em
+			margin 0.6em auto 0
+			padding 0 !important
+			
+
+
+.four-o-four
+	padding 0em
+	h1, h2
+		text-align center
+		
+/*Recetas Drupal*/
+
+
+
+.field-name-field-receta-ingrediente-cantida
+	display inline-block
+	
+.field-name-field-receta-ingredientes
+	.field-item
+		
+		.field
+			display inline-block
+			margin-left 0.2em
+			
+		&:hover
+			background-color #f5f5f5
+
+	.odd
+		background-color #f9f9f9
+		padding 0.6em
+		border-top 1px solid #ddd
+
+.field-name-field-receta-ingredientes
+	padding 0.6em
+	border-top 1px solid #ddd
+	
+	&:nth-child(odd)
+		background-color #f9f9f9
+		
+	&:hover
+		background-color #f5f5f5
+
+
+
+.field-name-field-receta-marca, .field-name-field-marcas 
+	display inline-block
+	vertical-align middle
+	margin 0.5em auto
+	width 5em
+	
+	img
+		height auto
+		max-width 100%
+	
+	h2
+		display none
+	.field-item
+		display inline-block
+		vertical-align middle
+		width 5em
+		
+		img
+			display inline-block
+			height auto
+			max-width 100%		
+
+.field-name-field-receta-momentos, .field-name-field-momentos
+	display inline-block
+	border-right 1px solid darken(AzulBase, 40%)
+	padding 0 0.25em
+	
+	&:last-of-type
+		border-right none
+
+	
+	.field-item
+		a
+			background-color AzulBase !important
+			color #fff !important
+			display inline
+			font-size 1em
+			font-weight Light
+			padding 4px 17px !important
+			text-transform capitalize
+			margin 0 auto 0.5em			
+			
+.field-name-field-tiemporpreparacion, .field-name-field-receta-tiempo, .field-name-field-tiempo-eeal-
+	display inline-block
+	
+	a
+		color darken(AzulBase, 50%)	
+		color #fff
+
+.field-name-field-receta-porciones		
+
+	.field-items
+		cursor pointer
+		// display inline-block
+		
+		
+		.field-item
+			color AzulBase
+			font-size 2.2em
+			text-align center
+			
+			
+		
+
+	
+#comentarios
+	#espacio-comentario
+		border 0.1em solid GrisClaro
+		padding 0.5em
+		transition all ease-in-out 0.2s
+		
+		&:focus, &:active, &:hover
+			border-color transparent
+
+	.form-group .form-control:focus, .form-group-default .form-control:focus
+		background-image linear-gradient(AzulBase, AzulBase), linear-gradient(AzulBase, AzulBase) !important
+		
+#comentar
+	text-align right
+	display inline-block
+
+.article
+	&-body
+		background-color  #fff
+		padding 3em
+		position relative
+		z-index 1
+
+		.destacado
+			color GrisOscuro
+			font-family Roboto
+			font-weight Light
+			
+		.shareThis
+			padding 0.5em 2em
+			
+			.article-action
+				margin-left -2.2em
+				text-align left
+				
+	//Head de articulos y secciones
+	&-head
+		min-height 31em
+		overflow hidden
+		position relative
+		transition all ease-in-out 0.3s
+		
+		h1
+			color darken(AzulBase, 40%)
+			font-size 2em
+			margin-top 0em
+			
+		h2
+			color #fff
+			font-size 1.2em
+			margin-top 1em
+	
+	
+		//Icono de la sección	
+		.btn
+			//Color Icono
+			&.btn-bienestar
+				background-color Naranja
+
+				&:hover
+					background-color lighten(Naranja, 5%)
+					
+			&.btn-nutricion
+				background-color Verde
+
+				&:hover
+					background-color lighten(Verde, 5%)
+					
+			&.btn-salud
+				background-color Rojo
+
+				&:hover
+					background-color lighten(Rojo, 5%)
+				
+			&.btn-fab
+				color #fff
+				cursor default
+				display inline-block
+				font-size 3em
+				height 2em
+				margin 0.2em auto
+				padding 0.5em 0 0
+				position relative
+				transition all ease-in-out 0.2s
+				width @height
+				z-index 1
+				
+				&:before
+					border 0.05em solid
+					border-radius 100%
+					height 2em
+					padding 0.3em
+					width 2em
+		
+		
+		.calorias
+			// color darken(AzulBase, 50%)
+			color #fff
+			font-size 1.8em
+			text-align center
+			margin 0
+			
+			.num-calorias
+				font-size 2em
+		
+		//Texto tiempo preparación			
+		.tiempo
+			// color darken(AzulBase, 60%)
+			color #fff
+			
+			span
+				vertical-align middle
+			
+
+		.img-article
+			position fixed
+			margin-top -6em
+			z-index 0
+	
+	&-receta
+		min-height 45em
+				
+.box
+	&-comentarios
+		h3
+			display block
+			margin 0.5em auto
+			text-align center
+	
+	&-compartir
+		margin-top 1em		
+		h5
+			background-color AzulBase
+			color #fff
+			display inline-block
+			margin 0 auto
+			padding 1em 0.8em 
+			position relative
+			text-align center
+			
+			&::after
+				absolute top 39% right -2px
+				background-color AzulBase
+				content ""
+				height 0.7em
+				transform rotate(45deg)
+				width @height
+			
+		.contador-general
+			display inline-block
+			font-size 1.6em
+			margin 0.3em
+			
+		.contador-social
+			font-size 1.6em
+			
+			.fa, .contador-num
+				display inline-block
+				vertical-align middle
+				
+			
+			.contador-num
+				background-color GrisClaro
+				margin-top 0.3em
+				text-align center
+				position relative
+				width 5em
+
+				&::before
+					absolute top 28% left -3px
+					background-color GrisClaro
+					content ""
+					height 0.7em
+					transform rotate(45deg)
+					width @height
+					
+			.fa
+				width 12%
+				
+				&-facebook
+					color #0279c8 
+
+				&-twitter
+					color #00b8d5	
+
+	&-compartir-receta
+		width 80%
+		margin-left 0
+		
+		.fa-star
+			color Naranja !important
+			
+		.ranking
+			color GrisOscuro
+			cursor pointer
+			font-size 1.5em
+			margin-top 0.5em
+			transition all ease-in-out
+			
+			&:hover
+				color Naranja
+				
+				&:before
+					content "\f005"				
+
+.btn-nav
+	absolute top -5em
+	color #fff !important
+	margin 0
+	padding 0
+	transition all ease-in-out 0.3s 
+	white-space normal
+	width 10em
+	z-index 2
+
+	&-left
+		left 0
+		
+		.txt
+			transform translateX(-0.5em)
+		
+	&-right
+		right 0
+		
+		.txt
+			transform translateX(0.5em)
+		
+	&:hover
+		box-shadow none !important
+		.txt
+			opacity 0.99
+			transform translateX(0)
+	
+	.glyphicon, .txt
+		display inline-block
+		vertical-align middle
+		
+	.glyphicon
+		font-size 2.9em
+		width 20%
+	
+	.txt
+		opacity 0
+		text-align center
+		transition all ease-in-out 0.3s
+		width 50%
+		
+		&-right
+			width 42%
+			
+
+
+//Navegador de DRUPAL
+
+.prev.empty, .next.emtpy
+	display none
+
+ul.flippy li
+	padding 0
+	margin 0
+	
+.prev
+	absolute top -5em
+	color #fff !important
+	left 0
+	margin 0
+	padding 0
+	transition all ease-in-out 0.3s 
+	white-space normal !important
+	width 10em !important
+	z-index 2
+	
+	a
+		color #fff
+		text-decoration none
+		text-transform capitalize
+		
+	.glyphicon, .txt
+		display inline-block
+		vertical-align middle
+		
+	.glyphicon
+		font-size 2.9em
+		width 20%
+	
+	.txt
+		opacity 0
+		text-align center
+		transition all ease-in-out 0.3s
+		transform translateX(-0.5em)
+		width 50%
+		
+	&:hover
+		text-decoration none !important
+		box-shadow none !important
+		transform translateX(0.5em)
+		// .txt
+		// 	opacity 0.99
+		// 	transform translateX(0)
+			
+
+.next
+	absolute top -5em right 0
+	color #fff !important
+	margin 0
+	padding 0
+	transition all ease-in-out 0.3s 
+	white-space normal !important
+	width 7em !important
+	z-index 2
+	
+	a
+		color #fff
+		text-decoration none
+		text-transform capitalize
+	
+	.glyphicon, .txt
+		display inline-block
+		vertical-align middle
+		
+	.glyphicon
+		font-size 2.9em
+		width 20%
+	
+	.txt
+		opacity 0
+		text-align center
+		transform translateX(0.5em)
+		transition all ease-in-out 0.3s
+		width 50%
+		
+	&:hover
+		box-shadow none !important
+		text-decoration none !important
+		transform translateX(-0.5em)
+		// .txt
+		// 	opacity 0.99
+		// 	transform translateX(0)	
+
+
+		
+.compartir
+	background-color GrisClaro
+	margin-top 0.5em
+	padding 0.2em 0.5em
+	
+	
+	.article-action
+			margin-left -0.3em
+			margin-top 0.2em
+			text-align right
+		
+		.btn
+			text-transform capitalize
+			margin 0 auto
+			margin-left 1em	
+			width 100%				
+
+		.buttons-share
+			absolute bottom 2em
+			box-shadow 0px 0px 2px 2px rgba(0, 0, 0, .25)
+			pointer-events none
+			transform translateY(-1em)
+			transition all ease-in-out 0.2s
+			z-index 2
+
+		.share
+			background-color transparent
+			border 0
+			border-radius 0.1em
+			color darken(AzulBase, 40%) !important
+			display inline-block
+			font-size 1.3em
+			margin 0.2em auto
+			padding 0
+			text-align center
+			transform translateX(1em)
+			transition all ease-in-out 0.3s
+			vertical-align middle
+			width 1.5em
+			
+			&:hover
+				box-shadow none !important
+				color lighten(AzulBase, 10%) !important
+				
+	.fa-print
+		color darken(AzulBase, 40%)
+		cursor pointer
+		transition all ease-in-out 0.3s
+		
+		&:hover
+			color lighten(AzulBase, 10%)
+
+.preparacion
+	h3
+		color GrisOscuro
+		font-size 1.5em
+		text-align center
+		text-transform uppercase
+
+	ol, .paso
+		counter-reset li
+		position relative
+		
+		li
+			list-style none
+			margin-bottom 1em
+			transition all ease-in-out 0.2s
+			
+			&:hover
+				&:before
+					background-color AzulBase
+					transform scale(1.2)
+					
+			&:before
+				absolute left -0.2em
+				background-color darken(AzulBase, 30%)
+				border-radius 0.2em
+				// border-radius 100%
+				color #fff 
+				content counter(li)
+				counter-increment li
+				height 1.5em
+				padding 0.1em
+				text-align center
+				transition all ease-in-out 0.2s
+				width @height
+			
+
+//Tags de momentos y marcas de la receta
+.filtros
+	border-bottom 1px solid GrisOscuro
+	margin 1.7em auto
+	
+	h3 
+		color GrisOscuro
+		display inline-block
+		font-size 1.5em
+		margin-top 0
+		max-width 8em
+		text-transform uppercase
+		vertical-align top
+		
+	.momentos
+		// border-right 1px solid GrisOscuro
+		display block
+		padding-right 0.8em
+		margin-left 0.6em
+		// text-align center
+		
+	.btn-momento
+		background-color AzulBase !important
+		color #fff !important
+		display block
+		font-size 1em
+		font-weight Light
+		padding 4px 17px !important
+		text-transform capitalize
+		margin 0 auto 0.5em
+		
+	.marca
+		background transparent
+		border 0.1em solid GrisClaro
+		max-width 5em 
+
+
+.recetas-relacionadas
+	.readmore
+		a
+			padding 0 30px
+				
+.titular
+	absolute bottom 0
+	width 100%
+	z-index 1	
+
+	&-bienestar
+		background-color rgba(Naranja, 0.7)
+		
+	&-nutricion
+		background-color rgba(Verde, 0.7)
+		
+	&-receta
+		background-color rgba(AzulBase, 0.7)
+		padding-top 1em
+		
+		.titulo-articulo
+			color #fff
+		
+	&-salud
+		background-color rgba(Rojo, 0.7)
+	

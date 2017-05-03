@@ -1,0 +1,379 @@
+input
+	border 2px solid 
+	border-radius 10px
+	color darken(AzulBase, 40%)
+	font-family Roboto
+	padding 0.5em 0
+	padding-left 0.5em !important
+	text-align left
+
+	&::-webkit-input-placeholder
+		color AzulBase !important
+	&::-moz-placeholder
+		color AzulBase !important 
+	&:-ms-input-placeholder
+		color AzulBase !important 
+	&:-moz-placeholder
+		color AzulBase !important
+		
+
+		
+label
+	color darken(AzulBase, 40%)
+	float left
+	font-family Varela
+	font-size 1.2em
+	width 100%
+
+
+select
+	border 2px solid 
+	border-radius 10px
+	color darken(AzulBase, 40%)
+	height 2.8em
+	padding 0.5em !important
+	width 100%
+	
+
+
+#registro, #perfil, #registro-evento
+	margin-bottom 2em
+	
+	input[type="text"], input[type="password"]
+		border 2px solid 
+		border-radius 10px
+		color darken(AzulBase, 40%)
+		padding 0.5em 0
+		width 100%
+
+	.form-control
+		border 2px solid 
+		border-radius 10px
+		color darken(AzulBase, 40%)
+
+	.ajustesCaptcha
+		padding 0px 0px 0px 0px
+		height 40px
+
+	.botonRegistro
+		margin 0 auto
+
+	.btn-warning
+		width 100%
+
+	.checkbox, .radio
+		float left
+		margin-top 10px !important
+		width 50%
+
+	.bordesCurvos
+		border-radius 10px
+
+	.error-campo
+		color red
+		float left
+		font-size 0.8em
+		width 100%
+
+	.floating-label
+		color white !important
+		font-family Varela
+		font-size 1.3em !important
+		left 25% !important
+		top 25% !important
+		
+	.form-control
+		background-color white
+		background-image none
+		background-size contain 
+		border-radius 10px
+
+	.form-control[readonly]
+		background-color white
+		border 0px
+		font-size 1em
+		color AzulBase
+
+	.form-control:focus
+		background-color white
+		background-image none !important
+		border 2px solid
+		color darken(AzulBase, 40%)
+		border-radius 10px
+		
+
+	.form-documentos
+		
+		.form-group
+			display inline-block
+			vertical-align top
+		.form-num
+			max-width 65%
+			width 100%
+			
+			
+
+	.img-responsive
+		margin 0 auto
+
+	.check
+		border 2px solid
+		color darken(AzulBase, 40%)
+		
+	.circle:focus
+		border 2px solid
+		color darken(AzulBase, 40%)
+		
+	.row
+		margin-bottom 1em
+
+	.radio label
+		padding-left 35px
+
+	.radio-primary
+		input[type=radio]:checked
+			& ~ .circle
+				border-color AzulBase
+
+	select.form-control
+		background-color white
+		background-image none !important
+		border 2px solid
+		color darken(AzulBase, 40%)
+		border-radius 10px !important
+
+	.selectRegister
+		width 100%
+
+	.spaceError
+		margin-bottom 0px
+
+	.subir-archivo
+		background-color AzulBase !important
+		border 0px !important
+		color white
+		
+
+	//Estilos registro drupal
+		
+	.field-type-image
+		// path("foto-registro.png")
+		background-position top center
+		background-repeat no-repeat
+		// padding-top 16em
+		
+		label
+			display none
+			
+		.form-submit
+			display block
+			margin 1em auto
+			max-width 12em
+			padding 0.8em
+			text-align center
+			
+	.form-item
+		
+		.form-type-radio
+			display inline-block
+			
+			.form-radio, .option
+				// padding 0
+				margin 0
+				padding 0 0.9em
+				
+
+			.form-radio
+				display inline-block
+				vertical-align middle
+				
+
+			.option
+				cursor pointer
+				display inline-block
+				float none
+				vertical-align middle
+				width 70%
+				
+
+	legend
+		font-size 1.2em
+		margin-bottom 0
+	.fieldset-legend
+		color darken(AzulBase, 40%)
+		// float left
+		font-family Varela
+		width 100%
+		
+
+				
+
+	#field-confirmar-contrasena-add-more-wrapper, .form-type-password-confirm
+		.form-type-password
+			display inline-block
+			margin-right 1em
+			vertical-align middle
+			width 47.4%
+
+	#edit-field-fecha-nacimiento-und-0-value
+		
+		
+		label
+			display none !important
+			
+		//Hard overwrite para selects en el form
+		.container-inline-date .date-padding
+			float none !important
+			
+		.form-item.form-type-date-select.form-item-field-fecha-nacimiento-und-0-value
+			width 100% !important
+			
+			div#edit-field-fecha-nacimiento-und-0-value
+				float none !important
+
+		.form-type-select
+			display inline-block
+			vertical-align middle
+			width 30% !important
+			
+			
+	.form-type-checkbox
+		display inline-block
+		
+		.form-checkbox, .option
+			cursor pointer
+			margin 0
+			padding 0 0.9em
+			
+
+		.form-checkbox
+			display inline-block
+			vertical-align middle
+			
+
+		.option
+			cursor pointer
+			display inline-block
+			float none
+			vertical-align middle
+			width 70%
+			
+
+	#edit-field-aturizacion-datos
+		label
+			display none
+			
+
+		input[type="checkbox"]
+			float left
+			margin-top 0.4em
+			
+		.option
+			display block
+			margin-left 1em
+			width 100%
+			
+
+
+#registro-evento
+	margin-bottom 30px
+	&::after, &::before
+		display table
+		content ''
+		
+	&::after
+		clear both
+		
+	.checkbox
+		text-align center
+		width 100%
+			
+#field-fecha-nacimiento-add-more-wrapper
+	.container-inline-date .date-padding
+		float none !important
+		
+	.container-inline-date .form-item, .container-inline-date .form-item input
+		width 100% !important
+
+
+/*Id contacto de drupal*/		
+#webform-client-form-1177
+	
+	input, textarea, select
+		border 2px solid AzulBase
+		border-radius 10px
+		color darken(AzulBase, 40%)
+		padding 0.5em 0
+		width 100%
+		
+
+	input[type="submit"]
+		border none
+		color #fff
+
+.image-preview
+	float none
+	width 8em
+	
+	img
+		display block
+		margin 0.5em auto
+		width 100%
+		
+.password-strength
+	display none
+	
+.edit-captcha-response
+	display none
+	
+.captcha
+	margin 1em auto
+	img
+		display inline-block
+		height auto
+		text-align center
+		vertical-align middle
+		width 30%
+
+.form-item-captcha-response
+	display inline-block
+	margin-left 2em
+	vertical-align middle
+	width 60%
+	
+#user-register-form
+	.selects
+		background-color transparent
+		
+.hierarchical-select
+	.selects
+		background-color transparent !important
+		
+
+#unsuscribe, #webform-client-form-1187
+	
+	h1
+		color darken(AzulBase, 40%)
+		margin-top 1em
+
+	input[type="text"], select
+		border 2px solid 
+		border-radius 10px
+		color darken(AzulBase, 40%)
+		padding 0.5em !important
+		width 100%
+		
+	select
+		cursor pointer
+		height 2.8em
+		
+	.btn
+		border-radius 10px
+		margin 1em auto 4rem
+		max-width 15rem
+		padding 15px 13px !important
+		
+
+	.destacado
+		color AzulBase
+		font-size 1.4em

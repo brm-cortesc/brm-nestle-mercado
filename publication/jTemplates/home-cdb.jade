@@ -1,0 +1,95 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title Casa &amp; Mercado del Bienestar
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.cdb
+			div.row
+				
+				//Menu
+
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					//Intro
+					h1.text-title Bienvenidos
+					
+					p.
+						Conoce nuestra Casa y Mercado del Bienestar <strong>NESTLÉ<sup>&reg;</sup></strong> y dale la bienvenida a un espacio en el que disfrutarás distintas actividades que aportarán a tu Nutrición, Salud y Bienestar. Talleres de cocina, información nutricional y el mejor contenido para tu salud y la de los que más quieres.
+					
+					img(href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento")
+					///-Intro
+
+					//Box proximo evento
+					
+					div.contenedor-evento.col-lg-8.col-md-8.col-sm-8.col-xs-12
+						h2.text-title  Próximo evento
+						
+						div.col-lg-6.col-md-6.col-sm-6.col-xs-12
+							div.prox-evento
+								div.fecha-evento
+									h3
+										span.dia 31
+										span.mes Dic
+								img(href="#" src="images/prox-evento-1.jpg" alt="Próximo evento" title="Próximo evento")
+
+						div.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-prox-e.informacion-evento
+							h3 Taller:
+							p ¡Qué en tu mesa no falte el Brócoli!
+							h3 Hora:
+							p 8:00 A.M. - 4:00 P.M.
+							h3 Conferencista:
+							p María Camila García - Chef
+							h3 Descripción:
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus facilisis libero...
+							a.btn.btn-primary(href='eventos-inscripcion.html')
+								| Regístrate aquí
+								i.fa.fa-angle-double-right
+
+					///-Box proximo evento
+					div.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-prox-e.revive-streaming
+						h2.text-title  Revive tu streamimg
+						a(href="#" ): img(src="images/revive-streaming.jpg" alt="Revive tu streamimg" title="Revive tu streamimg")
+					
+					div.clearfix
+					div.mapa-ubicacion
+						div.col-lg-8.col-md-8.col-sm-8.col-xs-12.col-prox-e
+							//Mapa
+							h2.text-title  Cómo llegar
+							div.embed-responsive.embed-responsive-16by9
+								iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.505034246441!2d-74.05161538465217!3d4.681925943122289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a946e99a477%3A0xa344030c056ddd3e!2sCasa+Nestl%C3%A9!5e0!3m2!1ses!2sco!4v1493139619504" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen)
+
+							///-Mapa
+
+						//Info casa
+						div.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-prox-e.informacion-ubicacion
+							h3 ¿Tienes alguna duda?
+							h3 Llámanos
+							p.
+								01 8000 510842 - 744 28 63
+							h3 Horarios de atención:
+							p.
+								<strong>Lunes a viernes</strong> de 9 a.m. a 7:00 p.m.
+								<br/><strong>Sábados</strong> de 9:00 a.m. a 5:00 p.m. 
+								<br/><strong>Domingos</strong> de 9:00 a.m. a 2:00 p.m.
+							h3 Dirección:
+							p.
+								Carrera 15 # 96 - 35
+							a.btn.btn-primary(href='#')
+								| Encuenta la ruta
+								i.fa.fa-angle-double-right
+						//Info casa
+
+					
+//- block Scripts
+//- 	script(src="js/libs/jquery.calendario.js")
+//- 	script(src="js/calendario.cdb.js")

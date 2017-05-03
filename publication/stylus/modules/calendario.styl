@@ -1,0 +1,513 @@
+.badge
+	&-cal
+		color #fff
+		margin 0px
+		text-decoration none
+		width 100%
+
+	&-nutricion
+		background-color Verde
+		
+		&:hover
+			background-color darken(@background-color, 40%)
+	
+	&-salud
+		background-color Rojo
+		
+		&:hover
+			background-color darken(@background-color, 40%)
+			
+	&-bienestar
+		background-color Amarillo
+		
+		&:hover
+			background-color darken(@background-color, 40%)
+
+.container-eventos
+	position relative
+	overflow hidden
+	
+	.contenedor-evento
+		.text-title
+			margin-top 0
+	
+	.container-calendario
+		position relative
+		height 644px
+		width 100%
+			
+	
+	.fc-starttime
+		display none
+		
+	.fc-endtime
+		display none
+	
+	.fc-calendar-events
+		margin-bottom 5px	
+		
+
+
+
+	
+.month
+	float left	
+			
+	select
+		background none
+		border none
+		font-family Varela
+		font-size 2rem
+		font-weight Bold
+		padding 0
+		text-transform uppercase
+		width 100%
+		
+.select-month
+	float right
+	
+	&-btn
+		
+	
+	.fa-chevron-left
+		font-size 20px
+	
+	.fa-chevron-right
+		font-size 20px
+		
+
+						
+.year
+	display inline-block
+	margin-left 30px
+		
+	select
+		background none
+		border none
+		font-family Varela
+		font-size 2rem
+		font-weight Bold
+		padding 0
+		text-transform uppercase
+		width 100%
+			
+
+.custom-calendar-full
+	bottom 0px
+	height auto
+	left 0px
+	position absolute
+	top 24px
+	width 100%
+	
+.custom-header
+	height 50px
+	padding 20px 20px 10px 30px
+	position relative
+	h2
+		color AzulBase
+		width 60%
+		a
+			color darken(AzulBase, 40%)
+	h3
+		color #ddd
+		color AzulBase
+		font-weight 300
+		line-height 30px
+		padding-right 125px
+		text-align right
+		width 40%
+	nav
+		position absolute
+		right 20px
+		top 20px
+		-webkit-touch-callout none
+		-webkit-user-select none
+		-khtml-user-select none
+		-moz-user-select none
+		-ms-user-select none
+		user-select none
+		span
+			// border-radius 0 3px 3px 0
+			background rgba(255,255,255,0.3)
+			box-shadow inset 0 1px rgba(255,255,255,0.2)
+			color AzulBase
+			cursor pointer
+			float left
+			font-size 20px
+			height 30px
+			margin 0 1px
+			position relative
+			width 30px
+			&:first-child
+				// border-radius 3px 0 0 3px
+			&:hover
+				background rgba(255,255,255,0.5)
+			&.custom-prev
+				&:before
+					content '\25c2'
+			&.custom-next
+				&:before
+					content '\25b8'
+			&:last-child
+				margin-left 20px
+				// border-radius 3px
+			&.custom-current
+				&:before
+					content '\27a6'
+	span
+		&:before
+			font-family 'fontawesome-selected'
+			color AzulBase
+			display inline-block
+			text-align center
+			width 100%
+			text-indent 4px
+
+.custom-header h2,
+.custom-header h3
+	float left
+	font-weight 300
+	text-transform uppercase
+	letter-spacing 4px
+	// text-shadow 1px 1px 0 rgba(0,0,0,0.1)
+
+.custom-header h2 a, 
+.custom-header h2 span
+	color rgba(255,255,255,0.3)
+	font-size 18px
+	letter-spacing 3px
+	white-space nowrap
+
+
+.detalle-evento
+	background-color GrisClaro
+	box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
+	max-width 33%
+	opacity 0
+	position absolute
+	right -100%
+	top 170px
+	transition all ease-in-out 0.3s
+	z-index 4
+	
+		
+	h2 
+		color #fff
+		font-size 22px
+		margin 0px
+		text-align center
+		text-decoration none
+		
+	h3
+		font-size 16px
+		margin 10px
+		
+	p
+		font-size 14px
+		margin 10px
+		text-align justify
+	
+	img
+		display block
+		height auto
+		max-width 100%
+		width 100%
+	
+	.btn-primary
+		// float right
+		
+		&.btn-cerrar
+			float right
+			font-size 16px
+			margin 10px
+			text-align center
+			max-width 70px
+		
+			
+		&.btn-share
+			float none
+			margin 10px
+			padding 10px
+			width 95%
+			
+		&.btn-asistir
+			float none
+			margin 10px
+			padding 10px
+			width 95%
+		
+	.icon
+		border 1px solid
+		color #ffffff
+		font-size 26px
+		height 40px
+		margin 10px
+		margin-left 20px
+		margin-right 10px
+		padding 5px
+		width 40px
+		
+		&.icon-bienestar
+			color #fff
+			
+		&.icon-salud
+			color #fff
+			
+		&.icon-nutricion
+			color #fff
+		
+	.fa-times
+		background none
+		font-size 16px
+		
+	.fa-share-alt
+		margin 10px
+		font-size 12px
+
+	.fa-angle-double-right
+		margin 10px
+		font-size 14px
+		
+
+	&.active
+		opacity 0.99
+		right 0
+		
+	&.hover
+		popacity 0.0
+		right -100%
+
+.evento-bienestar
+	h2
+		background-color Amarillo
+		
+	.btn
+		background-color Amarillo !important
+		
+.evento-nutricion
+	h2
+		background-color Verde
+		
+	.btn
+		background-color Verde !important
+		
+.evento-salud
+	h2
+		background-color Rojo
+		
+	.btn
+		background-color Rojo !important
+
+
+.fc-calendar
+	.fc-head
+		background-color AzulBase
+.fc-calendar-container
+	bottom 0px
+	height auto
+	position absolute
+	top 50px
+	width 100%
+
+
+.fc-calendar
+	// border-radius 20px
+	// left 20px
+	// right 20px
+	background GrisClaro
+	bottom 20px
+	height 100%
+	// margin 0 20px 20px
+	position absolute
+	top 10px
+	width 100%
+	.fc-head
+		// border-radius 20px 20px 0 0
+		// box-shadow inset 0 1px 0 rgba(255,255,255,0.2)
+		// display none
+		background AzulBase
+		border-color #fff
+		border-solid 0.5px
+		color rgba(255,255,255,0.9)
+		height 40px
+		line-height 40px
+		padding 0 0
+		& > div
+			font-weight 100
+			// text-transform uppercase
+			font-size 18px
+			// letter-spacing 3px
+			// text-shadow 0 1px 1px rgba(0,0,0,0.4)
+	.fc-row
+		box-shadow inset 0 -1px 0 rgba(255,255,255,0.2)
+		border-color #fff
+		border-solid 0.5px
+		box-shadow none
+		& > div
+			// border none
+			// float none
+			border-radius 0px !important
+			box-shadow -1px 0 0 rgba(255, 255, 255, 0.2)
+			box-shadow inset 0 -1px rgba(255,255,255,0.2) !important
+			border-color #fff
+			border-solid 0.5px
+			cursor pointer
+			min-height 50px
+			// padding 50px
+			& > span
+				&.fc-date
+					// text-shadow 0 1px 1px rgba(0,0,0,0.3)
+					// text-shadow none
+					bottom auto
+					color AzulBase
+					display inline-block
+					font-size 18px
+					font-weight 300
+					left auto
+					right 10px
+					text-align right
+					top 10px
+					width 30px
+				
+				&.fc-weekday
+					display none
+
+					
+			&:first-child
+				box-shadow none
+			&.fc-today
+				background transparent
+				box-shadow inset 0 0 100px rgba(255,255,255,0.1)
+				background rgba(255, 255, 255, 0.2)
+				&:after
+					display block
+					position absolute
+					left 0
+					width 100%
+					height 100%
+					opacity 0.2
+			& > div
+				display inline-block
+				margin-bottom 5px
+				margin-top 55px
+				max-width 95%
+				padding-left 5px
+			&:empty
+				min-height 0
+				height 0
+				box-shadow none !important
+				padding 0
+		&:last-child
+			box-shadow none
+			& > div
+				&:first-child
+					// border-radius 0 0 0 10px
+				&:last-child
+					// border-radius 0 0 10px 0
+		&:first-child
+			& > div
+				&:first-child
+					// border-radius 10px 0 0 0
+				&:last-child
+					// border-radius 0 10px 0 0
+	.fc-body
+		border none
+		// padding 20px
+
+.fc-calendar .fc-row > div > div a,
+.fc-calendar .fc-row > div > div span
+	color #fff
+	display inline-block
+	font-size 12px
+	margin-bottom 1px
+	max-width 100%
+	overflow hidden
+	padding 3px 5px
+	text-overflow ellipsis
+	text-transform uppercase
+	white-space nowrap
+	
+.formulario	
+	margin 0 auto	
+	padding-left 100px
+	padding-right 100px
+	
+	.form-inscripcion
+		
+		select
+			width 100%
+			margin-bottom 20px
+			
+		label
+			position absolute
+			padding 10px
+			color #ccc
+			font-weight 100
+			font-size 14px
+				
+		input
+			width 90%
+			margin-bottom 20px
+			background-color #f1f2f2
+			
+		button
+			background-color AzulBase
+			color #fff
+			float left
+			margin 0px auto
+			margin-bottom 30px
+			width 30%
+
+
+
+.no-touch
+	.custom-header
+		h2
+			a
+				&:hover
+					color rgba(255,255,255,0.9)
+	// .fc-calendar
+	// 	.fc-row
+	// 		& > div
+	// 			& > div
+	// 				a
+	// 					&:hover
+	// 						background #fff
+
+		
+
+				
+
+
+
+// @media screen and (max-width: 880px) , screen and (max-height: 450px)
+// 	.custom-header,
+// 	.custom-header nav,
+// 	.custom-calendar-full,
+// 	.fc-calendar-container, 
+// 	.fc-calendar,
+// 	.fc-calendar .fc-head,
+// 	.fc-calendar .fc-row > div > span.fc-date
+// 		position relative
+// 		top auto
+// 		left auto
+// 		bottom auto
+// 		right auto
+// 		height auto
+// 		width auto
+
+// 	.custom-header h2,
+// 		.custom-header h3
+// 		float none
+// 		width auto
+// 		text-align left
+// 		padding-right 100px
+
+// 	.fc-calendar .fc-row,
+// 	.ie9 .fc-calendar .fc-row > div,
+// 	.fc-calendar .fc-row > div
+// 		height auto
+// 		width 100%
+// 		border none
+

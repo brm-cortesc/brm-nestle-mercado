@@ -1,0 +1,79 @@
+//Header
+header
+	//Wrapper login
+	div.container-fluid.login
+		div.row
+			div.col-lg-4.col-md-4.col-sm-2.hidden-xs
+
+			div.col-lg-4.col-md-4.col-sm-8.col-xs-12
+				
+				h2 Inicio de sesión
+				form#login(method="")
+					//Usuario
+					div.form-group
+						label(for="login-usuario") Usuario:
+						input(type="text", class="form-control", id="login-usuario", name="login-usuario")
+
+					//Contraseña
+					div.form-group
+						label(for="login-password") Contraseña: 
+						input(type="text", class="form-control", id="login-password", name="login-password")
+					
+					//Recordarme
+					div.checkbox
+						label
+							<input type="checkbox"> Recordar mi cuenta
+
+					button#login-submit.btn.btn-warning(type="button") Ingresar
+
+
+					p.
+						<a href="#">¿Olvidaste tu contraseña?</a> / Eres nuevo, <a href="registro.html">regístrate</a>
+					
+				
+				button.btn.btn-warning.cerrar-login(type="button")
+					span.glyphicon.glyphicon-chevron-up
+
+			div.col-lg-4.col-md-4.col-sm-2.hidden-xs
+
+	///-Wrapper login
+
+	div.container-fluid
+		div.row
+			div.col-lg-5.col-md-5.col-sm-5.col-xs-12
+				//Logo
+				h2
+					a(href="index.html")
+						img.img-responsive(src="images/logo-nestle.svg", alt="NESTLÉ&reg; A gusto con la vida")
+				///-Logo
+			div.col-lg-2.col-md-2.col-sm-2.hidden-xs
+
+			div.col-lg-2.col-md-2.col-sm-2.hidden-xs
+				//Registro y Login
+				p.helpers-registro.
+					<a href="registro.html">Registrarse</a> / <a href="#" class="btn-login">Iniciar sesión</a>
+
+				///-Registro y Login	
+			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+
+				//País y buscador
+				p.pais.
+					Estás en el sitio de NESTLÉ&reg; Colombia
+				
+				form#search-api-page-search-form-buscador-casa-del-bienestar
+					div.form-group
+						input(type="search" class="form-control")
+						input.form-submit(type="submit", value="buscar" class="form-control")
+						//- span.glyphicon.glyphicon-search
+				
+				///-País y buscador
+
+	div#menu.container-fluid.shadow-z-2.menu.u-no-border
+		//Menu y Botones de redes sociales
+		div.row
+			div.col-lg-12.col-md-12.col-sm-12.col-xs-12
+				include menu.jade
+
+		///-Menu y Botones de redes sociales
+
+///-Header

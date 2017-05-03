@@ -1,0 +1,211 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title Registro
+
+block description
+	meta(name="description" content="Registro" )
+
+block content
+	//Registro 1
+	form#registro
+		div.container-fluid
+			div.row
+				div.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					h1.text-center Registro
+			div.row
+				div.col-lg-5.col-md-4.col-sm-4.hidden-xs
+				//Imagen de perfil
+				div.col-lg-2.col-md-4.col-sm-4.col-xs-12
+					div.form-group
+						img(class="img-responsive img-center", src="images/foto-registro.png", alt="Ejemplo de ALT")
+					div.form-group
+						label(for="inputFile", class="control-label")
+						input(type="text", class="form-control floating-label subir-archivo", placeholder="Cargar foto")
+						input(type="file", id="inputFile")
+				///-Imagen de perfil
+				div.col-lg-5.col-md-4.col-sm-4.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//Nombre y apellidos
+				div.col-lg-8.col-md-8.col-sm-12.col-xs-12
+					div.form-group
+						label(for="nombres") Nombre(s): *
+						input(type="text", class="form-control", id="nombres", name="nombres")
+						//- div.error-campo * Debe escribir su nombre
+					div.form-group
+						label(for="apellidos") Apellidos(s): *
+						input(type="text", class="form-control", id="apellidos", name="apellidos")
+						//- div.error-campo * Debe escribir sus apellidos
+				///-Nombre y apellidos
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//Tipo documento
+				div.col-lg-2.col-md-2.col-sm-4.col-xs-12
+					div.form-group
+						label Tipo: *
+						div.radio.radio-primary.spaceError
+							label(for="cedula-ciudadania")
+								input(type="radio", id="cedula-ciudadania", name="optionRadios", value="option1")
+								|  C.C.
+						div.radio.radio-primary.spaceError
+							label(for="cedula-extranjeria")
+								input(type="radio", id="cedula-extranjeria", name="optionRadios", value="option2")
+								|  C.E.
+						//- div.error-campo * Marque una opción
+				///-Tipo documento
+
+				//Documento
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					div.form-group
+						label(for="documento") Documento: *
+						input(type="text", class="form-control", id="numero-documento", name="numero-documento")
+						//- div.error-campo * Ingrese su número de documento
+				///-Documento
+
+				//Fecha
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					div.form-group
+						label(for="fecha-nacimiento") Fecha de nacimiento: *
+						input(type="date", class="form-control", id="fecha-nacimiento", name="fecha-nacimiento")
+						//- div.error-campo * Ingrese su fecha de nacimiento
+				///-Fecha
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//mail
+				div.col-lg-5.col-md-5.col-sm-8.col-xs-12
+					div.form-group
+						label(for="email") E-mail: *
+						input(type="text", class="form-control", id="email", name="email")
+						//- div.error-campo * Ingrese su correo electrónico
+				///-mail
+				//telefono
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					div.form-group
+						label(for="telefono") Teléfono: *
+						input(type="text", class="form-control", id="telefono", name="telefono")
+						//- div.error-campo * Ingrese su numero de teléfono
+				///-telefono
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//Genero
+				div.col-lg-2.col-md-2.col-sm-4.col-xs-12
+					div.form-group
+						label Género: *
+						div.radio.radio-primary.spaceError
+							label(for="genero-masc")
+								input(type="radio", id="genero-masc", name="optionRadios", value="option1")
+								|  Mas.
+						div.radio.radio-primary.spaceError
+							label(for="genero-fem")
+								input(type="radio", id="genero-fem", name="optionRadios", value="option2")
+								|  Fem.
+						//- div.error-campo * Marque una opción
+				///-Genero
+
+				//Ciudad
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					div.form-group
+						label(for="ciudad") Ciudad: *
+						select(class="form-control", id="ciudad", name="ciudad")
+							option Ciudad 1
+							option Ciudad 2
+							option Ciudad 3
+							option Ciudad 4
+							option Ciudad 5
+						//- div.error-campo * Seleccione una ciudad
+				///-Ciudad
+
+				//Como te enteraste
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					div.form-group
+						label(for="como-te-enteraste") ¿Cómo te enteraste?: *
+						select(class="form-control", id="como-te-enteraste", name="como-te-enteraste")
+							option Opción 1
+							option Opción 2
+							option Opción 3
+							option Opción 4
+							option Opción 5
+						//- div.error-campo * Selecciona una opción
+				///-Como te enteraste
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//Contraseña
+				div.col-lg-5.col-md-5.col-sm-8.col-xs-12
+					div.form-group
+						label(for="password") Contraseña: *
+						input(type="password", class="form-control", id="password", name="password")
+						//- div.error-campo * Debe ingresar una contraseña
+				///-Contraseña
+
+				//Captcha
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					label Captcha: *
+					div.col-lg-6.col-md-6.col-sm-8.col-xs-6.ajustesCaptcha
+						div.form-group
+							div.captcha
+								img(src="images/sample-captcha.jpg", alt="Ejemplo de ALT")
+								a(href='#')
+					div.col-lg-6.col-md-6.col-sm-4.col-xs-6.ajustesCaptcha
+						div.form-group
+							label(for="captcha")
+							input(type="text", class="form-control", id="captcha", name="captcha")
+					//- div.error-campo * Ingrese el texto de la imagen
+				///-Captcha
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//Contraseña
+				div.col-lg-5.col-md-5.col-sm-8.col-xs-12
+					div.form-group
+						label(for="confirm-pass") Confirmar contraseña: *
+						input(type="password", class="form-control", id="confirm-pass", name="confirm-pass")
+						//- div.error-campo * Debe confirmar su contraseña
+				///-Contraseña
+
+				//Recibir información
+				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+					div.form-group
+						label Recibir información: *
+						div.checkbox.spaceError
+							label(for="send-mail") 
+								input(type="checkbox", id="send-mail", name="send-mail")
+								|  e-mail
+						div.checkbox.spaceError
+							label(for="send-phone")
+								input(type="checkbox", id="send-phone", name="send-phone")
+								|  Teléfono
+						//- div.error-campo * Seleccione una opción
+				///-Recibir información
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+				//Participación
+				div.col-lg-8.col-md-8.col-sm-12.col-xs-12
+					div.form-group
+						div.checkbox.selectRegister
+							label(for="participar-promo")
+								input(type="checkbox", id="participar-promo", name="participar-promo")
+								|  Deseo participar en la promoción vigente
+						div.checkbox.selectRegister
+							label(for="autorizacion")
+								input(type="checkbox", id="autorizacion", name="autorizacion")
+								|  Autorizo a NESTLÉ&reg; para el tratamiento de mis datos personales	 
+							//- div.error-campo * Este campo es obligatorio
+				///-Participación
+				div.col-lg-2.col-md-2.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-4.col-md-4.col-sm-4.hidden-xs
+				//Botón confirmación de registro
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					button(class="btn btn-warning bordesCurvos") CONFIRMAR REGISTRO
+					div.ripple-wrapper
+				///-Botón confirmación de registro
+				div.col-lg-4.col-md-4.col-sm-4.hidden-xs
+	///-Registro 1
