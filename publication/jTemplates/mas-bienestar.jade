@@ -1,0 +1,153 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'MasBienestar';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.container-galeria-cdb.cdb
+			div.row
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					//Banner proximo
+					div.proximo-stream
+						div.info
+							h2 Próximo streaming
+							h3 Lunes 26 de Marzo a las 8:00 P.M
+							p Felipe Arango - chef Nutricionista
+					///-Banner proximo
+					//Intro
+					h1.text-title.
+						Más Bienestar
+					p.text-center.
+						Te compartimos los mejores momentos de nuestra <strong>Casa y Mercado del Bienestar NESTLÉ<sup>&reg;</sup></strong>
+					///-Intro
+					
+					//Highlights
+					div.stream-highlights
+						//Revive tu streaming
+						div.col-lg-6.col-md-6.col-sm-6.col-xs-6
+
+							//Preview
+							div.img-stream
+								a.btn.fa.fa-play-circle(href="#")
+
+								img(src="images/stream.jpg", alt="Último Streaming", title="Último Streaming")
+							///-Preview
+
+							//Descripcion
+
+							div.stream-description
+								p: strong Conferencista
+								p.conferencista Andrés Gutierrez - Presentador
+								p: strong Descripción
+								p.descripcion.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus facilisis libero a feugiat. Ut sed gravida odio. In pulvinar auctor erat. Ut et fermentum arcu. Vestibulum pharetra laoreet purus ut gravida.
+
+								p: strong Duración
+								p.duracion 38:17 Min							
+
+							///-Descripcion							
+
+						///-Revive tu streaming
+
+						//Revive tu taller
+						div.col-lg-6.col-md-6.col-sm-6.col-xs-6
+
+							//Preview
+							div.img-stream
+								a.btn.fa.fa-play-circle(href="#")
+
+								img(src="images/stream.jpg", alt="Último Streaming", title="Último Streaming")
+							///-Preview
+
+							//Descripcion
+
+							div.stream-description
+								p: strong Conferencista
+								p.conferencista Andrés Gutierrez - Presentador
+								p: strong Descripción
+								p.descripcion.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus facilisis libero a feugiat. Ut sed gravida odio. In pulvinar auctor erat. Ut et fermentum arcu. Vestibulum pharetra laoreet purus ut gravida.
+
+								p: strong Duración
+								p.duracion 38:17 Min							
+
+							///-Descripcion	
+						///-Revive tu taller
+					//Highlights
+					div.clearfix
+
+					a.btn.btn-primary.btn-streaming.active(href="#")
+						| streaming
+
+					a.btn.btn-primary.btn-talleres(href="#")
+						| Talleres
+					
+
+					//Streaming
+					div#streaming.row.galeria-list.stream-list
+
+						-for(x = 1; x <= 2; x++)
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-share-alt(href="#")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé de texto medio
+
+							
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-share-alt(href="#")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé de texto que puede ser más largo
+							
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-share-alt(href="#")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé
+
+							//- div.clearfix
+
+					///-Streaming
+
+					//Talleres
+					div#talleres.row.galeria-list.stream-list
+						
+						-for(x = 1; x <= 2; x++)
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-share-alt(href="#")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé de texto medio
+
+							
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-share-alt(href="#")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé de texto que puede ser más largo
+							
+							div.col-lg-4.col-md-4.col-sm-4.col-xs-4.galeria
+								a.btn.fa.fa-share-alt(href="#")
+								a(href="galeria-evento.html"): img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+								div.content-title-gallery
+									h3: a(href="galeria-evento.html") Galería Nestlé
+
+							//- div.clearfix
+
+					///-Talleres
+
+
+block Scripts
+	script(src="js/streaming.cdb.js")

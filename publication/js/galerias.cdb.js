@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
 			loc = jQuery(this).attr('href');
 
 		//*Devolvemos a la url el ancla*//	
-		window.location.hash = loc;
+		// window.location.hash = loc;
 
 		/*Evitamos el salto de la ventana al cambiar de hash*/
 		jQuery(window).scrollTop(pos)
@@ -80,23 +80,8 @@ jQuery(document).ready(function($) {
 
 		}, 200);
 	};
-
-	switch(galActual){
-		case '#local-stream':
-			jQuery('.btn.btn-primary').removeClass('active');
-			jQuery('.btn-local').addClass('active');
-			showLayout(galActual);
-			noScroll();
-		break;
-
-		case '#out-stream':
-			jQuery('.btn.btn-primary').removeClass('active');
-			jQuery('.btn-out').addClass('active');
-			showLayout(galActual);
-			noScroll();
-		break;
-
-	};
+	showLayout('#local-stream');
+	
 
 	//Se genera configuracion por cada galeria que se crea
 	jQuery('.galeria-single').each(function() {

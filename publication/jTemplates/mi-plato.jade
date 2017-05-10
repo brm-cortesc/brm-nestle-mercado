@@ -1,0 +1,117 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	-var titulo = 'Plato';
+	title Eventos &amp;  Talleres
+
+block description
+	meta(name="description" content="Eventos & Talleres" )
+
+block content
+
+	section
+		div.container-fluid.container-plato.cdb
+			div.row
+				div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+					include partials/menu-cdb
+				
+				div.col-lg-9.col-md-9.col-sm-12.col-xs-12
+					//Intro
+					h1.text-title.
+						Mi Plato Ideal
+					p.text-center.
+						En cómo distribuyas los alimentos de tu plato está la clave para crear una comida saludable y balanceada.
+						<strong>Haz clic</strong> en cada división y descubre qué alimentos puedes ingerir para armar tu plato ideal.
+					///-Intro
+
+					div.plato
+
+						div.container-tooltips
+							div.plato-tooltip.tooltip-proteinas
+								div.hotspot
+								div.tooltip-content
+									h3 Proteína:
+									p.
+										Una ¼ porción de tu plato
+
+									h3 Consejo
+									p.
+										Pescado, pollo, legumbres (habichuelas/leguminosas/frijoles), y nueces son fuentes de proteínas saludables y versátiles – pueden ser mezcladas en ensaladas, y combinan bien con vegetales en un plato. Limite las carnes rojas, y evite carnes procesadas como tocineta (“bacon”) y embuditos (salchichas).
+
+							div.plato-tooltip.tooltip-granos
+								div.hotspot
+								div.tooltip-content
+									h3 Granos integrales:
+									p.
+										Una ¼ porción de tu plato
+
+									h3 Consejo
+									p.
+										Granos integrales e intactos – trigo integral, cebada, granos de trigo, quínoa, avena, arroz integral, y las comidas preparadas con estos ingredientes como pasta de trigo integral – tienen un efecto más moderado en la azúcar en la sangre y la insulina que el pan blanco, arroz blanco, y otros granos refinados.
+
+							div.plato-tooltip.tooltip-agua
+								div.hotspot
+								div.tooltip-content
+									h3 Toma agua, café, o té
+
+									h3 Consejo
+									p.
+										Omite las bebidas azucaradas, limita la leche y productos lácteos a una o dos porciones al día, y limita el jugo (zumo) a un vaso pequeño al día.
+
+							div.plato-tooltip.tooltip-frutas
+								div.hotspot
+								div.tooltip-content
+									h3 Frutas y vergetales:
+									p Una ½ porción de tu plato
+
+									h3 Consejo
+									p.
+										Intenta incorporar color y variedad, y recuerde que las patatas (papas) no cuentan como un vegetal en El Plato para Comer Saludable por su efecto negativo en la azúcar en la sangre.
+
+							div.plato-tooltip.tooltip-aceites
+								div.hotspot
+								div.tooltip-content
+									h3 Aceites de plantas saludables:
+									p En moderación
+
+									h3 Consejo
+									p.
+										Escoje aceites vegetales saludables como oliva, canola, soya, maíz, girasol, maní (cacahuate), u otros, y evita los aceites parcialmente hidrogenados, los cuales contienen las grasas trans no saludables. Recuerda que “bajo en grasa” no significa “saludable”.
+
+
+							img.img-plato(src="images/plato-ideal.jpg", alt="Mi Plato Ideal Nestlé®", title="Mi Plato Ideal Nestlé®")
+
+
+					//Mantente activo
+					div.tip-activo
+						div.col-lg-2.col-md-2.col-sm-2.col-xs-12
+							img(src="images/m-activo.png", title="Manténte activo", alt="Manténte activo")
+						div.col-lg-10.col-md-10.col-sm-10.col-xs-12
+							h3 Manténte activo:
+
+							p.
+								La figura roja corriendo sobre el mantel de El Plato para Comer Saludable es un recordatorio de que mantenerse activo también es importante en el control de peso.
+
+
+					///-Mantente activo
+					div.clearfix
+					//Protips
+					div.protips
+						h2 Enfócate en la calidad de tu dieta
+						ul
+							li El tipo de carbohidratos en la dieta es más importante que la cantidad de carbohidratos en la dieta, porque algunas fuentes de carbohidratos – como los vegetales (otros que no sean patatas/papas), frutas, granos integrales, y legumbres (habichuelas/leguminosas/frijoles) – son más saludables que otros.
+
+							li El Plato para Comer Saludable también aconseja a los consumidores a evitar las bebidas azucaradas, una fuente principal de calorías – usualmente con poco valor nutricional.
+
+							li El Plato para Comer Saludable anima a los consumidores a usar aceites saludables, y no establece un máximo en el porcentaje de calorías de fuentes saludables de grasa que las personas deben obtener cada día.
+
+					///-Protips
+
+
+
+
+
+block Scripts
+	script(src="js/mi-plato.cdb.js")
