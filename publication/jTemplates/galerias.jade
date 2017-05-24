@@ -70,7 +70,8 @@ block content
 
 							div.col-lg-4.col-md-4.col-sm-4.col-xs-4
 								div.galeria-item
-									a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg")
+									div.chip.chip-user @perenjitoinstagram
+									a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg", title="Title image A")
 									img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
 
 							-if(z % 3 === 0)
@@ -79,24 +80,24 @@ block content
 					///-Galerias Instagram
 
 
-					//Galeria single
-					div#una-galeria.row.galeria-single.hidden
-						h3.text-center Titulo de la galería
+					//- //Galeria single
+					//- div#una-galeria.row.galeria-single.hidden
+					//- 	h3.text-center Titulo de la galería
 
-						-for(z = 1; z < 12 ;z ++)
+					//- 	-for(z = 1; z < 12 ;z ++)
 
-							div.col-lg-4.col-md-4.col-sm-4.col-xs-4
-								div.galeria-item
-									a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg")
-									img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+					//- 		div.col-lg-4.col-md-4.col-sm-4.col-xs-4
+					//- 			div.galeria-item
+					//- 				a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg")
+					//- 				img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
 
-							-if(z % 3 === 0)
-								div.clearfix
+					//- 		-if(z % 3 === 0)
+					//- 			div.clearfix
 								
 
 
 
-					///-Galeria single
+					//- ///-Galeria single
 
 
 block Scripts

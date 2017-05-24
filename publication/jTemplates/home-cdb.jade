@@ -26,7 +26,11 @@ block content
 					p.
 						Conoce nuestra Casa y Mercado del Bienestar <strong>NESTLÉ<sup>&reg;</sup></strong> y dale la bienvenida a un espacio en el que disfrutarás distintas actividades que aportarán a tu Nutrición, Salud y Bienestar. Talleres de cocina, información nutricional y el mejor contenido para tu salud y la de los que más quieres.
 					
-					img(href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento")
+					div.slider-home-eventos-cdb
+						div.slide
+							img(href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento")
+						div.slide
+							img(href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento")
 					///-Intro
 
 					//Box proximo evento
@@ -36,6 +40,7 @@ block content
 						
 						div.col-lg-6.col-md-6.col-sm-6.col-xs-12
 							div.prox-evento
+								div.chip.chip-bienestar Bienestar
 								div.fecha-evento
 									h3
 										span.dia 31
@@ -90,6 +95,19 @@ block content
 						//Info casa
 
 					
-//- block Scripts
-//- 	script(src="js/libs/jquery.calendario.js")
-//- 	script(src="js/calendario.cdb.js")
+block Scripts
+	script(src="js/libs/slick.js")
+	script.
+		jQuery(document).ready(function(){
+			/* Slider home */
+			configSlide = {
+				autoplay: true,
+				autoplaySpeed: 4000,
+				arrows:false,
+				dots: true
+
+			} 
+			jQuery('.slider-home-eventos-cdb').slick(configSlide);
+
+		});
+	//- script(src="js/calendario.cdb.js")

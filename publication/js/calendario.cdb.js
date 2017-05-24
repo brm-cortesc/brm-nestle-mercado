@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
 
+
+
 	/*Arreglo con el que se pinta en el calendario el evento*/
 	var fechas = 'js/fechas.json',
 		eventos = 'js/eventos.json',
@@ -160,6 +162,8 @@ jQuery(document).ready(function() {
 		jQuery('.detalle-evento').removeClass('active');
 		
 	});
+
+
 
 
 });

@@ -48,9 +48,27 @@ block content
 								img(src="images/mercado-general.jpg", alt="Casa & Mercado NESTLÉ®",  title="Casa & Mercado NESTLÉ®")
 
 
+					div.clearfix
+
+					div.container-galeria-cdb
+						//Galerias Instagram
+						div.row.galeria-single
+							-for(z = 1; z < 12 ;z ++)
+
+								div.col-lg-4.col-md-4.col-sm-4.col-xs-4
+									div.galeria-item
+										a.glyphicon.glyphicon-picture(href="images/galeria/sample-galeria-1-zoom.jpg", title="Title image A")
+										img(src="images/galeria/sample-galeria-1.jpg", alt="Alt Imagen", title="Title image")
+
+							
+						///-Galerias Instagram
+
+
+
 
 
 
 block Scripts
+	script(src="js/libs/jquery.magnific-popup.min.js")
 	script(src="js/libs/jquery.panzoom.min.js")
 	script(src="js/recorrido.cdb.js")

@@ -154,7 +154,9 @@
           <div class="menu modulo-izquierda navbar navbar-default">
             <ul class="nav navbar-nav">
               <li><a href="calendario.html">Eventos &amp; Talleres</a></li>
-              <li><a href="galerias.html#local-stream">Galerías</a></li>
+              <li><a href="galerias.html">Galerías</a></li>
+              <li><a href="mi-plato.html">Mi Plato Ideal</a></li>
+              <li><a href="mas-bienestar.html">Más Bienestar</a></li>
               <li><a href="recorrido.html">Recorre nuestra casa</a></li>
             </ul>
           </div>
@@ -165,13 +167,18 @@
           <p>
             Conoce nuestra Casa y Mercado del Bienestar <strong>NESTLÉ<sup>&reg;</sup></strong> y dale la bienvenida a un espacio en el que disfrutarás distintas actividades que aportarán a tu Nutrición, Salud y Bienestar. Talleres de cocina, información nutricional y el mejor contenido para tu salud y la de los que más quieres.
             
-          </p><img href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento">
+          </p>
+          <div class="slider-home-eventos-cdb">
+            <div class="slide"><img href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento"></div>
+            <div class="slide"><img href="#" src="images/slide-1-home.jpg" alt="Próximo evento" title="Próximo evento"></div>
+          </div>
           <!--/-Intro-->
           <!--Box proximo evento-->
           <div class="contenedor-evento col-lg-8 col-md-8 col-sm-8 col-xs-12">
             <h2 class="text-title"> Próximo evento</h2>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="prox-evento">
+                <div class="chip chip-bienestar">Bienestar</div>
                 <div class="fecha-evento">
                   <h3><span class="dia">31</span><span class="mes">Dic</span></h3>
                 </div><img href="#" src="images/prox-evento-1.jpg" alt="Próximo evento" title="Próximo evento">
@@ -248,6 +255,21 @@
     jQuery(document).ready(function() {
     	// This command is used to initialize some elements and make them work properly
     	jQuery.material.init();
+    });
+  </script>
+  <script src="js/libs/slick.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+    	/* Slider home */
+    	configSlide = {
+    		autoplay: true,
+    		autoplaySpeed: 4000,
+    		arrows:false,
+    		dots: true
+    
+    	} 
+    	jQuery('.slider-home-eventos-cdb').slick(configSlide);
+    
     });
   </script>
 </body></html>

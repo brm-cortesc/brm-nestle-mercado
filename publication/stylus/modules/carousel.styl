@@ -125,4 +125,31 @@
 
 		&-horizontal
 			top 42px
-	
+
+.slick
+	&-dots
+		list-style-type none
+		margin-bottom 1rem
+		margin-top 1rem
+		padding 0
+		text-align center
+		
+		li
+			display inline-block
+			margin 0 0.5rem 
+			button
+				background-color AzulBase
+				border 1px solid AzulBase
+				border-radius 100%
+				padding 0
+				display block
+				height 1rem
+				overflow hidden
+				transition all ease-in-out 0.3s
+				text-indent -9999rem
+				width @height
+				
+			&.slick-active
+				button
+					background-color white
+			

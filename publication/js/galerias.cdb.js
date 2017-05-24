@@ -87,9 +87,13 @@ jQuery(document).ready(function($) {
 	jQuery('.galeria-single').each(function() {
 
 		jQuery(this).magnificPopup({
-			  delegate:'.glyphicon-picture',
 			  type:'image',
-			  gallery:{enabled:true}
+			  delegate:'.glyphicon-picture',
+			  gallery:{enabled:true},
+			  image: {
+			      titleSrc: 'title'
+			    }
+
 
 			});
 		
