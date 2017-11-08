@@ -1,5 +1,5 @@
 //-Layout Base
-extends partials/base.jade
+extends partials/base-cdb.jade
 
 //-Etiqueta Title
 block title
@@ -14,20 +14,23 @@ block content
 	section
 		div.container-fluid.cdb
 			div.row
-				div.col-lg-3.col-md-3.col-sm-4.col-xs-12
+				div.col-lg-3.col-md-3.col-sm-3.col-xs-12
 					include partials/menu-cdb
 				
-				div.col-lg-9.col-md-9.col-sm-4.col-xs-12
+				div.col-lg-9.col-md-9.col-sm-9.col-xs-12
 					//Intro
 					h1.text-title Eventos &amp; talleres
-					p.text-center Diligencia los siguientes datos para realizar tu inscripción.
+					p.text-center Diligencia los siguientes datos para realizar tu pre-inscripción.
 					///-Intro
 					
-					//WebForm
+					
+					//Preregistro eventos
 					div#registro-evento
-						div.col-lg-8.col-md-8.col-sm-10.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-1
+						//Campos persona
+						div#usuario-base.col-lg-8.col-md-8.col-sm-10.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-1
+
 							//Selector de taller
-							div.form-group
+							div.form-group.col-md-6.col-sm-6
 								label(for="selTaller") Seleccionar taller
 								select(class="form-control", id="selTaller", name="selTaller")
 									option Opción 1
@@ -37,77 +40,140 @@ block content
 									option Opción 5
 
 							///-Selector de taller
+							
+
+							//Selector de invitados
+							div.form-group.col-md-6.col-sm-6
+								label(for="invitados") Invitados
+								select(class="form-control", id="invitados", name="invitados")
+									option(value="0") 0
+									option(value="1") 1
+									option(value="2") 2
+									option(value="3") 3
+									option(value="4") 4
+									option(value="5") 5
+									
+
+							///-Selector de invitados
+
+							div.clearfix
 
 							//Nombres
-							div.form-group
+							div.form-group.col-md-6.col-sm-6
 								label(for="nombres") Nombre(s): *
 								input(type="text", class="form-control", id="nombres", name="nombres")
 							///-Nombres
 
 							//Apellidos
-							div.form-group
+							div.form-group.col-md-6.col-sm-6
 								label(for="apellidos") Apellidos(s): *
 								input(type="text", class="form-control", id="apellidos", name="apellidos")
 							///-Apellidos
 
+							div.clearfix
 
-							//Info Documentos
-							div.form-documentos
-								//Tipo Documento
-								div.form-group.form-tipo
-									label Tipo: *
-									div.radio.radio-primary.spaceError
-										label(for="cedula-ciudadania")
-											input(type="radio", id="cedula-ciudadania", name="optionRadios", value="option1")
-											|  C.C.
-									div.radio.radio-primary.spaceError
-										label(for="cedula-extranjeria")
-											input(type="radio", id="cedula-extranjeria", name="optionRadios", value="option2")
-											|  C.E.
-								///-Tipo Documento
+							//Correo
+							div.form-group.col-md-6.col-sm-6
+								label(for="correo") Correo electrónico: *
+								input(type="email", class="form-control", id="correo", name="correo")
+							///-Correo
 
-								//Numero documento
-								div.form-group.form-num
-									label(for="documento") Documento: *
-									input(type="text", class="form-control", id="numero-documento", name="numero-documento")
-								///-Numero documento
+							//telefono
+							div.form-group.col-md-6.col-sm-6
+								label(for="telefono") Número de teléfono: *
+								input(type="number", min="0", class="form-control", id="telefono", name="telefono")
+							///-telefono
+
+							div.cleafix
 
 
-							///-Info Documentos
+							//tipo documento
+							div.form-group.col-md-6.col-sm-6
+								label(for="tipodoc") Tipo de documento: *
+								select(class="form-control", id="tipodoc", name="tipodoc")
+									option(value="CC") CC
+									option(value="TI") TI
+							///-tipo documento
 
-							//Teléfono fijo
-							div.form-group
-								label(for="telf") Teléfono fijo
-								input(type="text", class="form-control", id="telf", name="telf")
-							///-Teléfono fijo
+							//documento
+							div.form-group.col-md-6.col-sm-6
+								label(for="numdoc") Número de documento: *
+								input(type="number", min="0", class="form-control", id="numdoc", name="numdoc")
+							///-documento
 
+							div.cleafix
 
-							//Teléfono fijo
-							div.form-group
-								label(for="telc") Teléfono Celular
-								input(type="text", class="form-control", id="telc", name="telc")
-							///-Teléfono fijo
+							//edad
+							div.form-group.col-md-12
+								label(for="edad") Edad: *
+								select(class="form-control", id="edad", name="edad")									
+									option(value="") De 18-25
+									option(value="") De 26-35
+									option(value="") De 36-45
+									option(value="") De 46-en adelante
+							///-edad
+
+						///-Campos persona
+						//Campos invitados
+						div#invitados-form-1.invitados-form.col-lg-8.col-md-8.col-sm-10.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-1.hidden
+							//Invitado
+							div.col-md-6.col-sm-6
+								h2.
+									invitado #<span class="num-invitado">1</span>
+							//Invitado 
+							//Datos invitado
+							div.col-md-6.col-sm-6
+								//Nombres
+								div.form-group
+									label(for="nombresIn") Nombre(s): *
+									input(type="text", class="form-control", id="nombresIn", name="nombresIn")
+								///-Nombres
+
+								//Apellidos
+								div.form-group
+									label(for="apellidosIn") Apellidos(s): *
+									input(type="text", class="form-control", id="apellidosIn", name="apellidosIn")
+								///-Apellidos
+								//Correo
+								div.form-group
+									label(for="correoIn") Correo electrónico: *
+									input(type="email", class="form-control", id="correoIn", name="correoIn")
+								///-Correo
+								//documento
+								div.form-group
+									label(for="numdocIn") Número de documento: *
+									input(type="number", min="0", class="form-control", id="numdocIn", name="numdocIn")
+							///-documento
+
+							///-Datos invitado
+
+						///-Campos invitados
+
+						//invitado + 1
+						a.btn.btn-invitado.btn-primary(href="#") Añadir otro invitado
+						div.ripple-wrapper
+
+						///-invitado + 1
+
+						//Participación
+						div.form-group
+							div.checkbox
+								label(for="autorizacion")
+									input(type="checkbox", id="autorizacion", name="autorizacion")
+									|  Autorizo a NESTLÉ&reg; para el tratamiento de mis datos personales	 
+								//- div.error-campo * Este campo es obligatorio
+						
+						///-Participación
+						//Botón confirmación de registro
+						button(class="btn btn-warning") Enviar
+						div.ripple-wrapper
+						///-Botón confirmación de registro
+					///-Preregistro eventos
+
 					
-							
-							
-							//Participación
-							div.form-group
-								div.checkbox
-									label(for="autorizacion")
-										input(type="checkbox", id="autorizacion", name="autorizacion")
-										|  Autorizo a NESTLÉ&reg; para el tratamiento de mis datos personales	 
-									//- div.error-campo * Este campo es obligatorio
-							
-							///-Participación
-							
-							//Botón confirmación de registro
-							button(class="btn btn-warning") Enviar
-							div.ripple-wrapper
-							///-Botón confirmación de registro
-
-					///-WebForm
+					
 						
 			///-Registro 1
-//- block Scripts
+block Scripts
+	script(src="js/preregistro.cdb.js")
 //- 	script(src="js/libs/jquery.calendario.js")
-//- 	script(src="js/calendario.cdb.js")

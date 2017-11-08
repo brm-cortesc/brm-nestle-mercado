@@ -1,0 +1,426 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title NESTLÉ&reg; | Mi Recetario
+
+block description
+	meta(name="description" content="Mi Recetario" )
+
+block content
+	//Receta Random
+	section
+		div.container-fluid.u-no-border.seccion-nestle
+			div.row.max-width
+				div.col-lg-12.receta-random
+
+					div.logo-recetario
+						h1
+							img.img-responsive(src="images/mi-recetario-nestle.png", alt="Mi Recetario", width="170")
+
+					div.nombre-receta
+						h3: a(href="#") Rollitos de pollo con salsa verde y crema
+					img.receta.img-responsive(src="images/sample-receta-random.jpg", alt="Nombre Receta")
+
+	///-Receta Random
+	//Filtro de búsqueda
+	section
+		div.container-fluid
+
+			form#filtro-recetas(method="")
+				div.row
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12
+						//Campo search
+						div.buscar-receta.form-group.has-feedback
+							input.form-control(type="search", placeholder="Encuentra una receta")
+							span.glyphicon.glyphicon-search.form-control-feedback
+						///-Campo search
+
+				div.row.selects.shadow-z-2
+					div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+						//Select Momentos
+						div.ico.mdi-av-timer
+						div.form-group
+							select.form-control
+								option Momentos
+								option Value 2
+								option Value 3
+								option Value 4
+						///-Select Momentos
+					div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+						//Select tipo comida
+						div.ico.fa.fa-cutlery
+						div.form-group
+							select.form-control
+								option Tipo de comida
+								option Value 2
+								option Value 3
+								option Value 4
+						///-Select tipo comida
+					div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+						//Select tiempo
+						div.ico.mdi-device-access-alarm
+						div.form-group
+							select.form-control
+								option Con tiempo menor a
+								option Value 2
+								option Value 3
+								option Value 4
+						///-Select tiempo
+					div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+						//Select Marca
+						div.ico.fa.fa-tag
+						div.form-group
+							select.form-control
+								option Marca
+								option Value 2
+								option Value 3
+								option Value 4
+						///-Select Marca
+
+	///-Filtro de búsqueda
+	//Recetas de la semana
+	section
+		div.container-fluid
+			div.row
+
+				div.loader
+					img.img-responsive(src="images/icono-recetario.svg", width="42")
+					p Estamos preparando las recetas
+
+					
+				h2 Para esta semana te recomendamos
+				
+				//Lunes
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Lunes
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Lunes
+				//Martes
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Martes
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Martes
+				//Miércoles
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Miércoles
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Miércoles
+				//Jueves
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Jueves
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Jueves
+				//Viernes
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Viernes
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Viernes
+				//Sábado
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Sábado
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Sábado
+				//Domingo
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Domingo
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Domingo
+				//Lonchera
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Lonchera
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Lonchera
+				//Postres
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+				
+					figure.img-wrapper
+						div.dia-semana
+							h4 Postres
+
+						img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+					h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+					//Wrapper para tiempo, compartir, enviar, favorito y ver más
+					div.wrapper-vermas
+						div.row
+							div.col-lg-3.col-md-3.col-sm-12.col-xs-12
+								p.tiempo.
+									<span class="mdi-device-access-alarm"></span>
+									45 mins.					
+
+							div.col-lg-4.col-md-4.col-sm-6.col-xs-12.article-action
+								button.btn.btn-default.share.share-mail
+									span.fa.fa-paper-plane
+									
+								button.btn.btn-default.share.share-favorito
+										span.glyphicon.glyphicon-heart-empty
+
+								button.btn.btn-default.share.share-others
+									span.fa.fa-share-alt				
+
+							div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+								a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+				///-Postres
+
+	///-Recetas de la semana
+
+	//Video recetas
+	section
+		div.container-fluid
+			div.row
+				h2 Video recetas Nestlé&reg;
+
+	
+				div.col-lg-12
+
+					div.embed-responsive.embed-responsive-16by9
+						iframe.embed-responsive-item(src="https://www.youtube.com/embed/Ms-cvKwkgu8", frameborder="0", allowfullscreen)
+
+					h4 Arroz con cebada perlada, ahuyama y jengibre
+
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12
+
+					img.img-responsive(src="images/sample-video-1.jpg")
+
+					h4 Sopa de maiz dulce con aguacate 
+
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12
+
+					img.img-responsive(src="images/sample-video-1.jpg")
+
+					h4 Camarones con salsa de tamarindo y maní
+
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12
+
+					img.img-responsive(src="images/sample-video-1.jpg")
+
+					h4 Alfajores de café moca
+
+
+	///-Video recetas
+
+	
+	
+
+
+
+block Scripts

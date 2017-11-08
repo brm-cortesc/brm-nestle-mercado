@@ -1,0 +1,217 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title Políticas de privacidad de NESTLÉ&reg; Colombia
+
+block description
+	meta(name="description" content="Políticas de privacidad de NESTLÉ&reg; Colombia" )
+
+
+block content
+
+	section
+		div.container-fluid
+			div.row
+				article.col-lg-12
+
+					h1 Política de tratamiento de datos personales de NESTLÉ® Colombia
+
+					h2 Gracias por visitar este sitio en Internet.
+					p Esperamos que aprenda más sobre NESTLÉ® y nuestros productos.
+
+					p.
+						NESTLÉ® respeta su derecho a la privacidad en el mundo en línea cuando use nuestra página y se comunique electrónicamente con nosotros. Aplicamos todas las medidas necesarias para mantener segura toda la información personal que nos suministre. Es fundamentalmente importante que usted esté informado de que NESTLÉ® S.A. es el controlador de datos (remítase a la pregunta 18 de este Aviso) de su información personal. Los principios establecidos en este Aviso de Privacidad se aplican a todos los controladores de datos del Grupo NESTLÉ®. Nos planteamos un número de preguntas claves que consideramos que usted debe tener respuesta sobre información personal que entregue a NESTLÉ®. Estas respuestas le informarán de sus derechos referentes a información personal y las medidas que toma Nestlé para mantener la privacidad y seguridad de esta información personal. Confiamos en que esta información sea útil.
+
+					p.
+						Si tiene alguna solicitud sobre su información personal o alguna consulta sobre estas prácticas, por favor contactar a Nestlé de Colombia S.A. al correo electrónico servicio.consumidor@co.nestle.com o a la línea gratuita 018000 515566.
+
+
+
+					div#accordion.panel-group(role='tablist', aria-multiselectable='true')
+						div.panel.panel-default
+							div#headingOne.panel-heading(role='tab')
+								h4.panel-title
+									a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne') Política de tratamiento de información
+								
+						div#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+							div.panel-body
+								p.
+									Personas a las que está dirigida la política de NESTLÉ®:
+								p.
+									Esta política está dirigida  todos los titulares de información personal que sea utilizada y/o se encuentre en las bases de datos de las compañías NESTLÉ® de Colombia S.A. y Comestibles la Rosa S.A., quienes actúan en calidad de responsables del tratamiento de los datos personales.
+								h4 Ámbito legal de la Política:
+								
+								p.
+									De conformidad con lo dispuesto en la Constitución Política de Colombia en su artículo 15, la Ley 1581 de 2012 y su Decreto Reglamentario 1377 de 2013, deberá existir un tratamiento adecuado de los datos personales por quienes ostentan la calidad de Responsables de las bases de datos que se encuentren en su poder. 
+								p.
+									Adicional a lo anterior, el literal k) del artículo 18 de la ley 1581 de 2012 obliga a los responsables del tratamiento de datos personales a "adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de la presente ley y en especial, para la atención de consultas y reclamos".
+								p.
+									El artículo 25 de la misma ley establece que las políticas de tratamiento de datos son de obligatorio cumplimiento y que su desconocimiento acarreará sanciones. Dichas políticas no pueden garantizar un nivel de tratamiento inferior al establecido en la ley 1581 de 2012.
+
+								h4 Obligaciones:
+								p.
+									Estas políticas son de obligatorio y estricto cumplimiento para NESTLÉ® y las sociedades que se mencionan, en calidad de responsables, así como todos los terceros que obran en nombre de las Compañías, o que sin actuar en nombre de las mismas tratan datos personales por disposición de ésta como encargados.
+								p.
+									Tanto los responsables como los encargados, entiéndase, empleados, contratistas y terceros deben observar y respetar estas políticas en el cumplimiento de sus funciones y/ o actividades aún después de terminados los vínculos legales, comerciales, laborales o de cualquier índole. De igual manera, se comprometen a guardar estricta confidencialidad en relación con los datos tratados.
+								p.
+									En caso de incumplimiento de alguna de las obligaciones aquí mencionadas, por parte de las personas señaladas, los titulares de la información disponen del en el correo electrónico servicio.consumidor@co.nestle.co , y la línea gratuita nacional 01 8000 515566, en donde podrán poner cualquier queja, reclamo o consulta.
+
+
+								h4 Estructura Corporativa:
+								p.
+									En razón a lo dispuesto en el Decreto 1377 de 2013 y en su ley marco 1581 de 2012, se deja  constancia que los Responsables del Tratamiento cuentan con la escritura administrativa necesaria para asegurar la atención de los requerimientos, quejas, consultas y reclamos relacionados con la protección de los datos que tenemos en nuestro poder. Por lo tanto, NESTLÉ® cuenta con la capacidad necesaria para que se puedan ejercer libremente los derechos que tienen los titulares de los datos, tales como el derecho a conocer, actualizar, rectificar y suprimir información personal; así como el derecho a revocar el consentimiento otorgado para el tratamiento de datos personales. 
+								p.
+									A continuación describimos las áreas encargadas en la estructura corporativa mencionada para la protección de los datos personales:
+
+
+								ul
+									li.
+										4.1 Servicio al Consumidor: NESTLÉ® cuenta con un equipo encargo de recibir las comunicaciones, reclamos, quejas y consultas que directamente realizan los consumidores de los productos de la compañía, con lo cual contamos con un equipo capacitado para que todos los consumidores puedan ejercer libremente los derechos de los que son titulares, según la normatividad señalada. NESTLÉ®, pone a disposición de los consumidores: la línea nacional gratuita de atención al consumidor 01 8000 515566 y el correo electrónico: servico.consumidor@co.nestle.com , para la atención, y ejercicio de los derechos anteriormente mencionados
+									li.
+										4.2 Servicio al Cliente y Proveedores: NESTLÉ® cuenta con un equipo encargo de recibir las comunicaciones, reclamos, quejas y consultas que directamente realizan nuestros clientes y proveedores, con lo cual contamos con un equipo capacitado para que los mismos puedan ejercer libremente los derechos de los que son titulares, según la normatividad señalada. NESTLÉ®, pone a disposición de los consumidores: la línea nacional gratuita de atención al consumidor 01 8000 515566 y el correo electrónico: servico.consumidor@co.nestle.com, para la atención, y ejercicio de los derechos anteriormente mencionados.
+									li 4.3 Entes de Control y Vigilancia:Los entes de control de la compañía son:
+
+										ul
+											li Auditoria Interna.
+											li Dirección de Servicios Legales de NESTLÉ®.
+											li Superintendencia de Industria y Comercio.
+
+
+									li.
+										4.5 Sistema de Reportes de Colaboradores. NESTLÉ® cuenta con una herramienta diseñada para que todos los trabajadores de la Compañía puedan realizar reclamos, quejas, consultas y demás, respecto de sus derechos como titulares de los datos que son objeto de tratamiento por parte del Responsable del Tratamiento. NESTLÉ®, pone a disposición de los consumidores: la línea interna 9999 y el sistema digital en línea, para la atención, y ejercicio de los derechos anteriormente mencionados.
+
+								h4 Derechos aplicables a los titulares de datos personales NESTLÉ® se compromete a respetar y garantizar los siguientes derechos de los titulares de los datos:
+
+								p.
+									Conocer, actualizar y rectificar los datos personales. Para el efecto es necesario establecer previamente la identificación de la persona para evitar que terceros no autorizado accedan a los datos del titular del dato.
+								p.
+									Obtener copia de la autorización suscrita por éstos en calidad de titulares de los datos.
+								p.
+									Informar sobre el uso que NESTLÉ® ha dado a los datos personales del titular.
+								p.
+									Dar trámite a las consultas y reclamos siguiendo las pautas establecidas en la ley y en la presente política.
+								
+								p.
+									Acceder a la solicitud de revocatoria de la autorización y/o supresión del dato personal cuando la Superintendencia de Industria y Comercio haya determinado que en el tratamiento por parte de NESTLÉ® se ha incurrido en conductas contrarias a la ley 1581 de 2012 o a la Constitución.
+								p.
+									El Titular también podrá revocar la autorización y solicitar la supresión del dato, cuando no exista un deber legal o contractual que le imponga el deber de permanecer en la base de datos o archivo del Responsable o Encargado.
+								p.
+									La solicitud de supresión de la información y la revocatoria de la autorización no procederán cuando el titular tenga un deber legal o contractual de permanecer en la base de datos del Responsable o Encargado.
+								p.
+									Acceder en forma gratuita a sus datos personales. La información solicitada por el titular podrá ser suministrada por cualquier medio, incluyendo los electrónicos, según lo requiera el titular.
+
+
+								h4 Procedimiento para ejercer sus derechos como titular de los datos:
+								p.
+									NESTLÉ® en cumplimiento de las normas sobre Protección de Datos Personales, hace de su conocimiento el procedimiento y requisitos mínimos para el ejercicio de sus derechos.
+								
+								ul
+									li 6.1 La persona dispone de los siguientes medios para el ejercicio de sus derechos como titular de la información:
+
+										ul
+											li.
+												Línea gratuita nacional 01 8000 525566
+											li.
+												Correo electrónico: <a href="servicio.consumidor@co.nestle.com">servicio.consumidor@co.nestle.com</a>
+											
+											li.
+												Línea interna 9999 o sistema de en línea de reportes (sólo aplica para trabajadores de la Compañía)
+											li.
+												Finalmente, la persona podrá imprima el anexo número 1 de esta política (formulario para el ejercicio de Derechos) y diligencie cada uno de los campos. Si no tiene acceso al formulario, puede radicar un documento que contenga la información mínima que se detalla más adelante, documento que deberá ser firmado con número de identificación y enviado o radicado a la siguiente dirección Cr. 15 No. 96-35 (Casa NESTLÉ®).  
+									
+									li 6.2 Las personas que ejerzan alguno de los mecanismos señalados en el punto No. 6.1, deberá suministrar la siguiente información:
+
+										ul
+											li Nombres y apellidos,
+											li Datos de contacto (Dirección, física y/o electrónica y teléfonos de contacto),
+											li Medios para recibir respuesta a su solicitud,
+											li Motivo(s)/hecho(s) que dan lugar al reclamo,
+											li Descripción del Derecho que desea ejercer ante NESTLÉ®,
+									
+
+									li 6.3. En caso de que lo considere necesario, la persona podrá adjunte los documentos en los que soporte su solicitud y/o vulneración de sus derechos.
+									
+									li 6.4. Una vez utilizado alguno de los mecanismos aquí mencionados, la persona podrá comunicarse con NESTLÉ® dentro de los diez (10) días hábiles de radicada su solicitud, a fin de validar el estado de su requerimiento y subsanarlo en el evento en que el mismo presente inconsistencias. En todo caso, NESTLÉ® se comunicará con usted para que las mismas sean subsanadas
+
+									li 6.5 En caso de que la persona o área que recibe el reclamo no es el competente para resolverlo, dará traslado a quien corresponda en un término máximo de dos (2) días hábiles e informará de la situación al interesado.
+
+									li 6.6 NESTLÉ® tiene un término máximo para atender su requerimiento de quince (15) días hábiles contados a partir del día siguiente a la fecha de su recibo a satisfacción. Cuando no fuere posible atender el reclamo dentro de dicho término, se informará al interesado los motivos de la demora y la fecha en que se atenderá su solicitud, la cual en ningún caso podrá superar los ocho (8) días hábiles siguientes al vencimiento del primer término.
+
+
+								p.
+									NESTLÉ® dispondrá de un sistema de información para llevar el registro de todas las actuaciones efectuadas respecto de cada reclamo en el cual se anotará, entre otras, lo siguiente:
+
+								ul
+									li Fecha de recibo del requerimiento
+									li Datos básicos del titular y/o de quien realice el reclamo.
+									li Descripción de los motivos/hechos que dan lugar al reclamo.
+									li Fecha de envío de la respuesta al titular del dato y cierre de caso.
+
+								p Deberes de NESTLÉ® respecto de la protección de datos personales
+
+								p 7.1 Deberes de NESTLÉ® y las sociedades mencionados cuando obran como Responsables del tratamiento de datos personales:
+								
+								ul
+									li 7.1.1 Respecto del titular del dato:
+										ul
+											li Solicitar y conservar, en las condiciones previstas en esta política, copia de la respectiva autorización otorgada por el titular.
+											li Informar de manera clara y suficiente al titular sobre la finalidad de la recolección y los derechos que le asisten por virtud de la autorización otorgada.
+											li Garantizar al titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data, es decir, conocer, actualizar o rectificar sus datos personales.
+											li Informar a solicitud del titular sobre el uso dado a sus datos personales.
+											li Tramitar las consultas y reclamos formulados en los términos señalados en la presente política.
+
+									li 7.1.2 Respecto de la calidad, seguridad y confidencialidad de los datos personales:
+										ul
+											li Observar los principios de veracidad, calidad, seguridad y confidencialidad en los términos establecidos en la siguiente política.
+											li Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
+											li Actualizar la información cuando sea necesario.
+											li Rectificar los datos personales cuando ello sea procedente.
+									
+									li 7.1.3 Cuando realiza el tratamiento a través de un Encargado
+										ul
+											li Suministrar al Encargado del tratamiento únicamente los datos personales que está autorizado a suministrar a terceros. Garantizar que la información que se suministre al Encargado del tratamiento sea veraz, completa, exacta, actualizada, comprobable y comprensible.
+											li Comunicar de forma oportuna al encargado del tratamiento todas las novedades respecto de los datos que previamente le haya suministrado y adoptar las demás medidas necesarias para que la información suministrada a este se mantenga actualizada.
+											li Informar de manera oportuna al Encargado del tratamiento las rectificaciones realizadas sobre los datos personales para que éste proceda a realizar los ajustes pertinentes.
+											li Exigir al encargado del tratamiento, en todo momento, el respeto a las condiciones de seguridad y privacidad de la información del titular.
+											li Informar al encargado del tratamiento cuando determinada información se encuentre en discusión por parte del titular, una vez se haya presentado la reclamación y no haya finalizado el trámite respectivo.
+
+								h4 Video vigilancia:
+
+								ul
+									li NESTLÉ® utiliza diversos medios de videovigilancia instalados en diferentes sitios internos y externos de nuestras instalaciones u oficinas.
+									li NESTLÉ® informa sobre la existencia de estos mecanismos mediante la difusión en sitios visibles de anuncios de videovigilancia.
+									li La información recolectada se utilizará para fines de seguridad de las personas, los bienes e instalaciones. Esta información puede ser empleada como prueba en cualquier tipo de proceso ante cualquier tipo de autoridad y organización.
+
+
+								h4 Aviso de Privacidad:
+								p.
+									NESTLÉ® informa que el aviso de privacidad de tratamiento de los datos personales puede consultarlo en <a href="http://www.nestle.com.co.">www.nestle.com.co.</a>
+								p.
+									Modificación y/o actualización de la política de protección de datos y manejo de información:
+								p.
+									Cualquier cambio sustancial en las políticas de Tratamiento, se comunicará de forma oportuna a los titulares de los datos a través de los medios habituales de contacto y/o a través de:
+								ul
+									li Página web <a href="http://www.nestle.com.co">www.nestle.com.co</a>.
+									li Correo electrónico enviado a los titulares,
+									li Para los titulares que no tengan acceso a medios electrónicos o aquellos a los que no sea posible contactar, se comunicará a través de una publicación en un diario de amplia circulación.
+
+
+								
+
+
+						div.panel.panel-default
+							div#heading2.panel-heading(role='tab')
+								h4.panel-title
+									a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapse2', aria-expanded='false', aria-controls='collapse2') P2 - ¿Cómo hace NESTLÉ&reg; para mantener segura su información personal?
+
+						div#collapse2.panel-collapse.collapse(role='tabpanel', aria-labelledby='heading2')
+							div.panel-body
+								p.
+									R. NESTLÉ&reg; adopta todas las medidas necesarias para conservar su información personal privada y segura. Solamente el personal autorizado del Grupo NESTLÉ&reg;, el personal de otras compañías (por Ej., proveedores de servicios) o el personal autorizado de los socios comerciales (quienes por contrato han acordado mantener segura toda la información) acceden a su información personal. Todo el personal de NESTLÉ&reg; que tiene acceso a su información personal debe adherirse a la Política de Privacidad del Grupo NESTLÉ&reg; y los empleados de terceros que accedan a su información personal han firmado contratos de confidencialidad. Además, los contratos firmados con compañías terceras que acceden a su información personal, garantizan que esta información se mantenga segura. Para asegurar la protección de su información personal, NESTLÉ&reg; mantiene un ambiente de tecnología de la información segura y tienen las medidas apropiadas para impedir el acceso no autorizado (por ejemplo hacking). Favor remítase a la P4 - ¿A quién revelará el Grupo NESTLÉ&reg; su información personal y por qué?
+
+
+
+
+								

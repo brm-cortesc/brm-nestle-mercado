@@ -1,0 +1,312 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title NESTLÉ&reg; | Mi Recetario
+
+block description
+	meta(name="description" content="Mi Recetario" )
+
+block content
+	div.container-fluid.u-no-border.article-head.article-receta
+		//Titulo del artículo
+		div.row.max-width.titular.titular-receta
+
+			div.col-lg-8.col-md-8.col-sm-8.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+				h2.tiempo.
+					<span class="mdi-device-access-alarm "></span> 35 mins
+				h1.titulo-articulo Curry de carne molida con papas y arvejas 
+
+			//Calorías
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-12
+				h2.calorias.
+					Calorías <span class="num-calorias">490</span>
+
+			///-Calorías
+		///-Titulo del artículo
+
+		div.row.max-width.img-article
+
+			//Imagen destacada del articulo
+			div.col-lg-12.u-no-border
+				img.img-responsive(src="images/receta-detalle.jpg", alt="Curry de carne molida con papas y arvejas ", title="Curry de carne molida con papas y arvejas ")
+
+			///-Imagen destacada del articulo
+
+	section.container-fluid.article-body
+		//Compartir y ranking
+		div.box-compartir.box-compartir-receta.row
+			
+			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				h5 Compartido
+				p.contador-general 9999
+
+			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				div.contador-social.twitter
+					i.fa.fa-twitter
+					p.contador-num 9999
+				
+			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				div.contador-social.facebook
+					i.fa.fa-facebook
+					p.contador-num 9999
+
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-12
+				i.ranking.fa.fa-star
+				i.ranking.fa.fa-star
+				i.ranking.fa.fa-star
+				i.ranking.fa.fa-star-half-o
+				i.ranking.fa.fa-star-o
+
+
+		///-Compartir y ranking
+
+		//Momentos y Marcas
+		div.row.filtros
+			//Momentos
+			div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				h3 Ideal para
+				div.momentos
+					button.btn.btn-momento Almuerzo
+					button.btn.btn-momento Cena
+
+			///-Momentos
+			//Marcas
+			div.col-lg-9.col-md-9.col-sm-9.col-xs-12
+				h3 prepara esta receta con
+
+				button.marca: img.img-responsive(src="images/carousel-logos/maggi.jpg", alt="Maggi")
+				button.marca: img.img-responsive(src="images/carousel-logos/maggi.jpg", alt="Maggi")
+
+			///-Marcas
+		///-Momentos y Marcas
+
+		div.row
+			//Listado de ingredientes
+			article.col-lg-5.col-md-5.col-sm-5.col-xs-12
+				form#listado-ingredientes(method="")
+						span.texto-apoyo ingredientes para
+
+						.form-group
+							select.form-control
+								option 1
+								option 2
+								option 3
+								option 4
+								option 5
+								option(selected="selected") 6
+								option 7
+								option 8
+								option 9
+								option 10
+								option 11
+								option 12
+								option 13
+								option 14
+								option 15
+								option 16
+								option 17
+								option 18
+								option 19
+								option 99
+
+						span.texto-apoyo porciones
+							
+
+
+
+				div.table-responsive
+					table.table.table-striped.table-hover
+						tr
+							td 2 cucharadas de aceite 
+
+						tr
+							td 1 cebolla grande finamente picada 
+
+						tr
+							td 1 y &frac12; libras de carne molida
+
+						tr
+							td 2 cucharadas de jengibre fresco finamente picado 
+
+						tr
+							td 2 dientes de ajo finamente picados 
+
+						tr
+							td  1 y &frac12; cucharadas de curry en polvo
+
+						tr
+							td 1 papa grande, pelada y cortada en cubitos de 1 x 1 centímetros
+
+						tr
+							td 1 cubo de Caldo MAGGI DOBLE GUSTO&reg; Costilla preparado en 1 y &frac12; tazas de agua
+
+						tr
+							td 1 lata de tomates enteros escurridos (14 onzas)
+
+						tr
+							td 1 y &frac12; tazas de arvejas frescas
+
+						tr
+							td 1 lata grande de Crema de Leche NESTLÉ&reg; (295 gramos)
+
+						tr
+							td &frac12; taza de cilantro picado Sal y pimienta al gusto  
+
+			///-Listado de ingredientes
+			
+			//Preparación
+			article.preparacion.col-lg-7.col-md-7.col-sm-7.col-xs-12
+				h3 Preparación
+
+				ol.paso
+					li.
+						En una olla grande calienta el aceite a fuego medio y sofríe la cebolla por 3 minutos. Agrega la carne molida, revuelve bien y cocínala por 2 minutos o hasta que cambie de color y ya no esté rosada. Sazona con sal y pimienta al gusto.
+					 
+					li.
+						Añade el jengibre, el ajo, el curry y la papa, y cocina por 2 minutos más, asegurándote de que todos los ingredientes queden bien mezclados. 
+
+					li.
+						Vierte el Caldo MAGGI DOBLE GUSTO&reg; Costilla preparado a la olla, revuelve muy bien y no dejes que nada se pegue del fondo de la olla. Continúa cocinando hasta que el caldo hierva y reduce la temperatura a medio bajo. Agrega los tomates, presiónalos con la cuchara para deshacerlos, sigue revolviendo y añade las arvejas. Tapa la olla parcialmente para cocinar el curry por 25 minutos o hasta que las papas se cocinen. Adiciona la Crema de Leche NESTLÉ&reg;, revuelve y rectifica de nuevo la sazón con sal y pimienta al gusto. 
+
+					li.
+						Sirve en platos hondos y espolvorea con cilantro. Puedes acompañar con arroz blanco o pan pita.
+
+
+
+
+			///-Preparación
+
+		//Calificación y compartir
+		div.row.compartir
+			//- div.col-lg-8.col-md-8.hidden-sm.hidden-xs					
+
+
+			//- div.col-lg-4.col-md-4.col-sm-4.col-xs-12.article-action
+			div.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-lg-offset-8.col-md-offset-8.col-sm-offset-8.col-md-push-8.col-sm-push-8.article-action
+				button.btn.btn-default.share.share-print
+					span.fa.fa-print
+
+				button.btn.btn-default.share.share-mail
+					span.fa.fa-paper-plane
+					
+				button.btn.btn-default.share.share-favorito
+						span.glyphicon.glyphicon-heart-empty
+
+				button.btn.btn-default.share.share-others
+					span.fa.fa-share-alt
+
+		///-Calificación y compartir
+
+		//Comentarios
+		div.row.box-comentarios
+			div.col-lg-12
+				h3 Comentarios
+
+				form#comentarios(action="")
+
+					div.form-group
+						textarea#espacio-comentario.form-control(name="espacio-comentario", placeholder="Déjanos tus comentarios")
+
+					div.form-group.u-text-right
+						button#comentar.btn.btn-primary(type="button") Publicar
+		///-Comentarios
+
+		//Contenido relacionado
+		aside.row.recetas-relacionadas
+			h2 también te sugerimos
+			//Receta 1
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+			
+				figure.img-wrapper
+
+					img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+				h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+				//Wrapper para tiempo, compartir, enviar, favorito y ver más
+				div.wrapper-vermas
+					div.row
+						div.col-lg-3.col-md-2.col-sm-2.col-xs-12
+							p.tiempo.
+								<span class="mdi-device-access-alarm"></span>
+								45 mins.					
+
+						div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+							button.btn.btn-default.share.share-mail
+								span.fa.fa-paper-plane
+								
+							button.btn.btn-default.share.share-favorito
+									span.glyphicon.glyphicon-heart-empty
+
+							button.btn.btn-default.share.share-others
+								span.fa.fa-share-alt				
+
+						div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+							a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+			///-Receta 1
+			//Receta 2
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+			
+				figure.img-wrapper
+
+					img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+				h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+				//Wrapper para tiempo, compartir, enviar, favorito y ver más
+				div.wrapper-vermas
+					div.row
+						div.col-lg-3.col-md-2.col-sm-2.col-xs-12
+							p.tiempo.
+								<span class="mdi-device-access-alarm"></span>
+								45 mins.					
+
+						div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+							button.btn.btn-default.share.share-mail
+								span.fa.fa-paper-plane
+								
+							button.btn.btn-default.share.share-favorito
+									span.glyphicon.glyphicon-heart-empty
+
+							button.btn.btn-default.share.share-others
+								span.fa.fa-share-alt				
+
+						div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+							a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+			///-Receta 2
+			//Receta 3
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.module-box.module-box-receta
+			
+				figure.img-wrapper
+					img.img-article.img-responsive(src="images/sample-thumb-receta.jpg", alt="Ejemplo ALT", title="Ejemplo de Title")
+
+				h3 En un lugar de la Mancha, de cuyo nombre no quiero acordarme
+
+				//Wrapper para tiempo, compartir, enviar, favorito y ver más
+				div.wrapper-vermas
+					div.row
+						div.col-lg-3.col-md-2.col-sm-2.col-xs-12
+							p.tiempo.
+								<span class="mdi-device-access-alarm"></span>
+								45 mins.					
+
+						div.col-lg-4.col-md-5.col-sm-6.col-xs-12.article-action
+							button.btn.btn-default.share.share-mail
+								span.fa.fa-paper-plane
+								
+							button.btn.btn-default.share.share-favorito
+									span.glyphicon.glyphicon-heart-empty
+
+							button.btn.btn-default.share.share-others
+								span.fa.fa-share-alt				
+
+						div.col-lg-5.col-md-5.col-sm-6.col-xs-12
+							a.btn.btn-primary.readmore(href="#" role="button") Ver Más
+			///-Receta 3
+
+		///-Contenido relacionado	
+
+
+block Scripts

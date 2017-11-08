@@ -1,0 +1,208 @@
+//-Layout Base
+extends partials/base.jade
+
+//-Etiqueta Title
+block title
+	title Registro
+
+	block description
+		meta(name="description" content="Registro" )
+
+block content
+	//Registro 1
+	form#selector-preferencias
+		div.container-fluid
+			div.row
+				div.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					h1.text-center Registro
+			//Inicio selección temas
+			div.row
+				div.col-lg-4.col-md-4.hidden-sm.hidden-xs
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.selection.select-default
+						span.logo.icon.icon-white.icon-check
+						div.content
+							p
+								|SELECCIONA LOS TEMAS
+								br
+								|QUE MÁS TE INTERESAN
+				div.col-lg-4.col-md-4.hidden-sm.hidden-xs
+			///-Final selección temas
+			
+			//Inicio selección pilares
+			div.row
+				// Selección nutrición
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					//Titulo nutrición
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.selection.select-nutricion
+						span.logo.icon.icon-pilares.icon-nutricion
+						div.content
+							h2 NUTRICIÓN
+					//Línea
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="linea")
+						input(type="checkbox", name="linea", id="linea", value="linea")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-alimentos
+						div.content
+							h3.titulo-selector Nutrientes Alimenticios
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+					//Preparaciones
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="preparaciones")
+						input(type="checkbox", name="preparaciones", id="preparaciones", value="preparaciones")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-preparaciones
+						div.content
+							h3.titulo-selector Selección de alimentos Saludables
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+					//Familia
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="familia")
+						input(type="checkbox", name="familia", id="familia", value="familia")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-menu-balanceado
+						div.content
+							h3.titulo-selector Menús balanceados
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="familia")
+						input(type="checkbox", name="familia", id="familia", value="familia")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-manipulacion
+						div.content
+							h3.titulo-selector Manipulación de alimentos
+				///- Selección nutrición
+
+
+				// Selección salud
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					//Titulo salud
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.selection.select-salud
+						span.logo.icon.icon-pilares.icon-white.icon-salud
+						div.content
+							h2 SALUD
+					//Adultos mayores
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="adultos")
+						input(type="checkbox", name="adultos", id="adultos", value="adultos")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-cuidado-personal
+						div.content
+							h3.titulo-selector Cuidado Personal
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+					//Ejercicio
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="ejercicio")
+						input(type="checkbox", name="ejercicio", id="ejercicio", value="ejercicio")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-descanso
+						div.content
+							h3.titulo-selector Descanso
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+					//Alergias
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="alergias")
+						input(type="checkbox", name="alergias", id="alergias", value="alergias")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-deporte
+						div.content
+							h3.titulo-selector Ejercicio
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="alergias")
+						input(type="checkbox", name="alergias", id="alergias", value="alergias")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-line
+						div.content
+							h3.titulo-selector Prevención de enfermedades
+
+				///- Selección salud
+
+
+				// Selección bienestar
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					//Titulo bienestar
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.selection.select-bienestar
+						span.logo.icon.icon-pilares.icon-white.icon-bienestar
+						div.content
+							h2 BIENESTAR
+					//Adultos mayores
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="belleza")
+						input(type="checkbox", name="belleza", id="belleza", value="belleza")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-belleza
+						div.content
+							h3.titulo-selector Belleza
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+					//Ejercicio
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="ocio")
+						input(type="checkbox", name="ocio", id="ocio", value="ocio")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-celebracion
+						div.content
+							h3.titulo-selector Celebraciones
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+					//Alergias
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="deporte")
+						input(type="checkbox", name="deporte", id="deporte", value="deporte")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-familia
+						div.content
+							h3.titulo-selector Familia
+							//- p Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.
+
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="deporte")
+						input(type="checkbox", name="deporte", id="deporte", value="deporte")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-ninos
+						div.content
+							h3.titulo-selector Hijos
+
+					div.col-lg-12.col-md-12.col-sm-12.col-xs-12.boton-brand(data-box="deporte")
+						input(type="checkbox", name="deporte", id="deporte", value="deporte")
+						span.icon.icon-check.check-active.circle-check
+						span.icon.icon-close.check-active-two.circle-uncheck
+						span.logo.icon.icon-vacaciones
+						div.content
+							h3.titulo-selector Vacaciones
+
+				///- Selección bienestar
+
+			///-Final selección pilares
+			div.row
+				div.col-lg-3.col-md-3.hidden-sm.hidden-xs
+				//Participación
+				div.col-lg-6.col-md-6.col-sm-12.col-xs-12
+					div.form-group
+						div.checkbox.selectRegister
+							label(for="recibir-info")
+								input(type="checkbox", id="recibir-info", name="recibir-info")
+								|  Deseo recibir información de NESTLÉ® y sus marcas en mi mail.
+				///-Participación
+				div.col-lg-3.col-md-3.hidden-sm.hidden-xs
+			div.row
+				div.col-lg-4.col-md-4.col-sm-4.hidden-xs
+				//Botón confirmación de registro
+				div.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					button(class="btn btn-warning bordesCurvos") FINALIZAR REGISTRO
+					div.ripple-wrapper
+				///-Botón confirmación de registro
+				div.col-lg-4.col-md-4.col-sm-4.hidden-xs
+	///-Registro 1
+
+block Scripts
+	//- script(src="js/casa-del-bienestar.js")
+	//- script.
+	//- 	$(document).ready(function() {
+	//- 		// This command is used to initialize some elements and make them work properly
+	//- 		$.material.init();
+	//- 	});
+	
+	//- script(src='js/seleccion-registro.js')
