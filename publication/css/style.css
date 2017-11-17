@@ -3291,6 +3291,15 @@ a.yt-username {
   margin: 1rem auto;
   max-width: 22rem;
 }
+#registro-evento .btn-warning {
+  padding: 1rem;
+}
+#carrusel-mercado img {
+  display: block !important;
+  height: auto !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
 .cdb .text-title {
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -3605,16 +3614,6 @@ a.yt-username {
   box-shadow: none;
   color: #3973bf;
   pointer-events: none;
-}
-.container-pan-cdb .container-pan-img {
-  margin-bottom: 3rem;
-  max-height: 50rem;
-  width: 100%;
-}
-.container-pan-cdb .container-pan-img img {
-  height: 100%;
-  max-width: 200%;
-  width: 100%;
 }
 .container-plato .container-tooltips {
   position: relative;

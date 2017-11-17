@@ -32,20 +32,24 @@ block content
 						| casa nestlé
 						sup &reg;
 
-					div.container-pan-img.container-mercado
-						p.text-center Encuentra todo el portafolio de nuestras marcas.
-						div.container-pan
-							div.panzoom
-								img(src="images/mercado-general.jpg", alt="Casa & Mercado NESTLÉ®",  title="Casa & Mercado NESTLÉ®")
+					div.container-mercado						
+						div.slider-recorrido-cdb
+
+							//item
+							div.item
+								img(src="images/mercado-general.jpg", alt="Ejemplo de ALT", title="Ejemplo de Title")
+
+
+							//item
+							div.item
+								img(src="images/mercado-general.jpg", alt="Ejemplo de ALT", title="Ejemplo de Title")
 
 
 
-
-					div.container-pan-img.container-casa.hidden
-						p.text-center Espacios de la casa del bienestar
-						div.container-pan
-							div.panzoom
-								img(src="images/mercado-general.jpg", alt="Casa & Mercado NESTLÉ®",  title="Casa & Mercado NESTLÉ®")
+							//item
+							div.item
+								img(src="images/mercado-general.jpg", alt="Ejemplo de ALT", title="Ejemplo de Title")
+	
 
 
 					div.clearfix
@@ -70,5 +74,5 @@ block content
 
 block Scripts
 	script(src="js/libs/jquery.magnific-popup.min.js")
-	script(src="js/libs/jquery.panzoom.min.js")
+	script(src="js/libs/slick.js")
 	script(src="js/recorrido.cdb.js")

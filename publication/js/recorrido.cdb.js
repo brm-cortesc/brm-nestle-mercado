@@ -1,22 +1,32 @@
 jQuery(document).ready(function($) {
 	
-	jQuery(".panzoom").panzoom({
-		startTransform: 'scale(2)',
-		increment: 0.1,
-		minScale: 0.5,
-		contain: 'automatic'
-	})
-	/*evento con rueda de mouse*/
-	.parent().on('mousewheel.focal', function( e ) {
-            e.preventDefault();
-            var delta = e.delta || e.originalEvent.wheelDelta;
-            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
-            jQuery(".panzoom").panzoom('zoom', zoomOut, {
-              animate: false,
-              focal: e
-            });
-    });
+	// jQuery(".panzoom").panzoom({
+	// 	startTransform: 'scale(2)',
+	// 	increment: 0.1,
+	// 	minScale: 0.5,
+	// 	contain: 'automatic'
+	// })
+	// /*evento con rueda de mouse*/
+	// .parent().on('mousewheel.focal', function( e ) {
+ //            e.preventDefault();
+ //            var delta = e.delta || e.originalEvent.wheelDelta;
+ //            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+ //            jQuery(".panzoom").panzoom('zoom', zoomOut, {
+ //              animate: false,
+ //              focal: e
+ //            });
+ //    });
+    
 
+    /* Slider home */
+    configSlide = {
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows:false,
+        dots: true
+
+    } 
+    jQuery('.slider-recorrido-cdb').slick(configSlide);
 
     jQuery('.container-pan-cdb .btn.btn-primary').click(function (e) {
     	e.preventDefault();

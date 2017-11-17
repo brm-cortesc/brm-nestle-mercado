@@ -45,6 +45,7 @@ jQuery(document).ready(function () {
 
 
 	/*Validacion registro base*/
+	
 
 	
 
